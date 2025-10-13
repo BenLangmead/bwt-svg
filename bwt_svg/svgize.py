@@ -59,7 +59,8 @@ def render(t, show_mums=False,
            monospace_font="Consolas",
            label_font="Times",
            background_color=None,
-           show_thresholds=False):
+           show_thresholds=False,
+           guidelines=False):
     """ Make SVG out of all the BWT structures """
     # Create BwtSuite to compute all arrays
     suite = BwtSuite(t)
@@ -98,23 +99,70 @@ def render(t, show_mums=False,
 
     # BWM section positions
     t_right_edge = 2*padding + label_offset + label_shift + len(t) * ch_wd
+    bwm_narrow_col_wd = 13
+
+    # IF YOU ADD A NEW ELEMENT to the diagram, please include its contribution
+    # here.  This allows us to size the overall image correctly.
+    vertical_contributions = [
+        {
+            't': ch_ht, 'off': ch_ht, 'isa': ch_ht,
+            'phi': ch_ht, 'phiinv': ch_ht, 'plcp': ch_ht,
+            'plcs': ch_ht, 'extra': ch_ht
+        },
+        {
+            'bwm_total': ch_ht * (len(t) + 3)
+        }
+    ]
+
+    horizontal_contributions = [
+        {
+            't_total': t_right_edge + 15 + ch_wd + space
+        },
+        {
+            'da': ch_wd if show_mums else 0,
+            'sa': ch_wd,
+            'lf': 1.5 * ch_wd,
+            'lcs': 1.5 * ch_wd,
+            'l': ch_wd * 1.8,
+            'bwm': bwm_narrow_col_wd * (len(t) - 2),
+            'f': ch_wd * 1.8,
+            'lcp': ch_wd * 1.5,
+            'fl': ch_wd * 1.5,
+            'rank': ch_wd * 1.5,
+            'thresholds': (ch_wd * len(suite.alphabet)) if show_thresholds else 0,
+            'extra': padding
+        }
+    ]
+
+    top_height = sum(x for x in vertical_contributions[0].values())
+    bottom_height = sum(x for x in vertical_contributions[1].values())
+
+    top_width = sum(x for x in horizontal_contributions[0].values())
+    bottom_width = sum(x for x in horizontal_contributions[1].values())
+
+    overall_width = max(top_width, bottom_width)
+    overall_height = top_height + bottom_height
 
     def _svg_header():
         lcp_highlight = "#c3d9ff"
         lcs_highlight = "#ffc3c3"
         lcp_opacity = lcs_opacity = "0.5"
-        total_width = t_right_edge + 15 + ch_wd + space
-        total_height = (n + 8) * ch_ht + padding * 2
+
+        # To set total width, we need to measure both the width of the
+        # horizontally oriented top part (T and friends), but also the width of
+        # the vertically oriented part (BWM, F, L and friends).
+        
+        # The width needs to be something like the maximum of those two widths.
 
         rect_tag = ""
         if background_color is not None:
             rect_tag = (
-                f'  <rect width="{total_width}" height="{total_height}" '
+                f'  <rect width="{overall_width}" height="{overall_height}" '
                 f'fill="{background_color}"/>\n'
             )
 
         return f'''<?xml version="1.0" encoding="UTF-8"?>
-            <svg width="{total_width}" height="{total_height}" xmlns="http://www.w3.org/2000/svg">
+            <svg width="{overall_width}" height="{overall_height}" xmlns="http://www.w3.org/2000/svg">
             {rect_tag}  <defs>
                 <style>
                 .monospace {{ font-family: '{monospace_font}', monospace; font-size: 18px; }}
@@ -138,6 +186,28 @@ def render(t, show_mums=False,
             '''
 
     svg_content = _svg_header()
+
+    if guidelines:
+        # Draw a horizontal guideline at 'top_height' from the top across the
+        # full width of the image (thicker)
+        svg_content += (
+            f'  <line x1="0" y1="{top_height}" x2="{overall_width}" y2="{top_height}" '
+            f'style="stroke:#bbb;stroke-width:3;stroke-dasharray:4,4"/>\n'
+        )
+        # Draw a vertical guideline at 'top_width' from the left across the
+        # full height of the image (thicker)
+        svg_content += (
+            f'  <line x1="{top_width}" y1="0" x2="{top_width}" y2="{overall_height}" '
+            f'style="stroke:#bbb;stroke-width:3;stroke-dasharray:4,4"/>\n'
+        )
+        # Draw a vertical *blue* guideline at 'bottom_width' from the left across
+        # the full height of the image (thicker and blue)
+        svg_content += (
+            f'  <line x1="{bottom_width}" y1="0" x2="{bottom_width}" y2="{overall_height}" '
+            f'style="stroke:#38f;stroke-width:3;stroke-dasharray:4,4"/>\n'
+        )
+
+
 
     mono = 'class="monospace"'
     anc_end = 'text-anchor="end"'
@@ -345,16 +415,16 @@ def render(t, show_mums=False,
         num_threshold_cols = len(suite.alphabet) - 1  # Omit smallest character
         threshold_width = num_threshold_cols * (ch_wd + 5)
 
-    bwm_narrow_col_wd = 13
     bwm_start_y = 10 * ch_ht + padding - 30
     from_right = 0
+    right_hand_reference = overall_width - space
 
     #
     # DA (if MUMs are shown)
     #
     if show_mums:
         from_right += ch_wd
-        da_st_x = t_right_edge - from_right
+        da_st_x = right_hand_reference - from_right
         da_lab_y = bwm_start_y - (ch_ht * 1.2)
         da_group = []
         with svg_group(da_group, id="DA"):
@@ -369,7 +439,7 @@ def render(t, show_mums=False,
     #
     def _add_sa():
         sa_group = []
-        sa_st_x = t_right_edge - from_right  # SA starts one char width before right edge
+        sa_st_x = right_hand_reference - from_right  # SA starts one char width before right edge
         with svg_group(sa_group, id="SA"):
             sa_lab_y = bwm_start_y - (ch_ht * 1.2)
             sa_group.append(_text(sa_st_x, sa_lab_y, lab, anc_end, 'SA'))
@@ -386,7 +456,7 @@ def render(t, show_mums=False,
     # LF, values and rectangles
     #
     def _add_lf():
-        lf_st_x = t_right_edge - from_right
+        lf_st_x = right_hand_reference - from_right
         lf_group = []
         with svg_group(lf_group, id="LF"):
             # Draw LF highlighting rectangles for maximal ascending intervals
@@ -430,16 +500,22 @@ def render(t, show_mums=False,
     from_right += (1.5 * ch_wd)
     svg_content += _add_lf()
 
+    # We've only increased "from_right" for LF and SA and DA so far.  Now we
+    # need to inccrease it for LCS and L, so there's an extra - (2 *1.5 * ch_wd)
+    # term below
+
     # The LCS, L, BWM, F and LCP elwements are somewhat intertwined, so we have
     # to define some of these shape variables here
-    bwm_start_x = t_right_edge - from_right - (7 * ch_wd) - (n-2) * bwm_narrow_col_wd
+    bwm_start_x = (
+        right_hand_reference - from_right - (2 * 1.5 * ch_wd) - (2 * ch_wd) - (n - 2) * bwm_narrow_col_wd
+    )
 
     #
     # LCS column, values
     #
     def _add_lcs():
         lcs_group = []
-        lcs_st_x = t_right_edge - from_right
+        lcs_st_x = right_hand_reference - from_right
         with svg_group(lcs_group, id="LCS"):
             lcs_vals_group = []
             with svg_group(lcs_vals_group, id="LCSvals"):
@@ -464,10 +540,9 @@ def render(t, show_mums=False,
                     y = bwm_start_y + (i-1) * ch_ht + y_addend
                     lcs_val = lcs[i] if i < len(lcs) else 0
                     if lcs_val > 0:
-                        lcs_width = lcs_val * ch_wd - (lcs_val - 1) * bwm_narrow_col_wd
-                        lcs_offset = (len(row) - lcs_val - 0.5) * ch_wd
-                        lcs_narrow_offset = (len(row) - lcs_val - 2) * bwm_narrow_col_wd
-                        this_lcs_start_x = bwm_start_x + lcs_offset - lcs_narrow_offset
+                        lcs_width = ch_wd + lcs_val * bwm_narrow_col_wd
+                        lcs_offset = (len(row) - lcs_val + 1) * bwm_narrow_col_wd
+                        this_lcs_start_x = bwm_start_x + lcs_offset
                         lcs_rect1_group.append(
                             _rect(this_lcs_start_x, y, lcs_width, ch_ht, 'red-highlight'))
             lcs_group.extend(lcs_rect1_group)
@@ -478,11 +553,10 @@ def render(t, show_mums=False,
                     y = bwm_start_y + (i-2) * ch_ht + y_addend
                     lcs_val = lcs[i] if i < len(lcs) else 0
                     if lcs_val > 0:
-                        lcs_width = lcs_val * ch_wd - (lcs_val - 1) * bwm_narrow_col_wd
-                        lcs_offset = (len(row) - lcs_val - 0.5) * ch_wd
-                        lcs_narrow_offset = (len(row) - lcs_val - 2) * bwm_narrow_col_wd
+                        lcs_width = ch_wd + lcs_val * bwm_narrow_col_wd
+                        lcs_offset = (len(row) - lcs_val + 1) * bwm_narrow_col_wd
                         if i > 0:
-                            this_lcs_start_x = bwm_start_x + lcs_offset - lcs_narrow_offset
+                            this_lcs_start_x = bwm_start_x + lcs_offset
                             lcs_rect2_group.append(
                                 _rect(this_lcs_start_x, y, lcs_width, ch_ht, 'red-outline'))
             lcs_group.extend(lcs_rect2_group)
@@ -497,7 +571,7 @@ def render(t, show_mums=False,
     def _add_l():
         l_group = []
         with svg_group(l_group, id="L"):
-            l_col_x = t_right_edge - from_right
+            l_col_x = right_hand_reference - from_right
             l_lab_y = bwm_start_y - (ch_ht * 1.2)
             l_rect_y = l_lab_y + ch_ht * 0.35
             l_group.append(_rect(l_col_x - (ch_wd * 0.45), l_rect_y, ch_wd, n * ch_ht, 'l-column'))
@@ -529,7 +603,7 @@ def render(t, show_mums=False,
                         char = row[j]
                         x = bwm_start_x + j * ch_wd
                         if j != 0:
-                            x -= (j - 1) * bwm_narrow_col_wd
+                            x -= (j - 1) * (ch_wd - bwm_narrow_col_wd)
                         # Determine color: blue for LCP prefix, red for LCS suffix, black otherwise
                         color = "black"
                         if j < lcp_val:
@@ -777,7 +851,7 @@ def render(t, show_mums=False,
     print(f"SVG saved to {filename}")
 
 
-def print_arrays(t, show_thresholds=False):
+def print_arrays(t, show_thresholds=False, show_mums=False):
     """Print all BWT-related arrays for the given text."""
     suite = BwtSuite(t)
     print(f"Text: {t}")
@@ -815,6 +889,23 @@ def print_arrays(t, show_thresholds=False):
     print()
     print("Phi-inverse (φ⁻¹):")
     print(suite.phiinv)
+    
+    # Print MUMs if requested and there are multiple documents
+    if show_mums and suite.num_docs > 1:
+        print()
+        print("Maximal Unique Matches (MUMs):")
+        mums = suite.find_mums()
+        if mums:
+            for i, (start, end) in enumerate(mums):
+                print(f"  MUM {i+1}: SA[{start}:{end}] (length {end-start})")
+                # Show the actual suffixes for this MUM range
+                for j in range(start, end):
+                    suffix_start = suite.sa[j]
+                    suffix = suite.t[suffix_start:]
+                    print(f"    SA[{j}] = {suffix_start}: {suffix}")
+        else:
+            print("  No MUMs found")
+    
     if show_thresholds:
         print()
         print("Thresholds:")
@@ -832,6 +923,8 @@ def main():
     print_parser.add_argument('text', help='Input text (must end with terminator)')
     print_parser.add_argument('--show-thresholds', action='store_true',
                               help='Show threshold arrays for each alphabet character')
+    print_parser.add_argument('--show-mums', action='store_true',
+                              help='Show Maximal Unique Matches (MUMs)')
 
     # Render subcommand
     render_parser = subparsers.add_parser('render', help='Generate SVG visualization')
@@ -848,11 +941,13 @@ def main():
                               help='Show MUMs')
     render_parser.add_argument('--show-thresholds', action='store_true',
                               help='Show threshold arrays for each alphabet character')
+    render_parser.add_argument('--show-guidelines', action='store_true',
+                              help='Show guidelines in the SVG output')
 
     args = parser.parse_args()
 
     if args.command == 'print':
-        print_arrays(args.text, show_thresholds=args.show_thresholds)
+        print_arrays(args.text, show_thresholds=args.show_thresholds, show_mums=args.show_mums)
     elif args.command == 'render':
         render(args.text,
                filename=args.output,
@@ -860,7 +955,8 @@ def main():
                monospace_font=args.monospace_font,
                label_font=args.label_font,
                show_mums=args.show_mums,
-               show_thresholds=args.show_thresholds)
+               show_thresholds=args.show_thresholds,
+               guidelines=args.show_guidelines)
     else:
         parser.print_help()
 
