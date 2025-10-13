@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+            <svg width="944.0" height="1050" xmlns="http://www.w3.org/2000/svg">
+              <rect width="944.0" height="1050" fill="#ffffff"/>
+  <defs>
+                <style>
+                .monospace { font-family: 'Courier New', monospace; font-size: 18px; }
+                .label { font-family: 'Times', sans-serif; font-size: 16px; font-weight: bold; }
+                .f-column { fill: #e6e6e6; stroke: none; }
+                .l-column { fill: #e6e6e6; stroke: none; }
+                .blue-highlight { fill: #c3d9ff; stroke: none; opacity: 0.5; }
+                .blue-outline { fill: none; stroke: #000066; stroke-width: 2; opacity: 0.5; }
+                .red-highlight { fill: #ffc3c3; stroke: none; opacity: 0.5; }
+                .green-highlight { fill: #c3ffc3; stroke: none; opacity: 0.5; }
+                .red-outline { fill: none; stroke: #660000; stroke-width: 2; opacity: 0.5; }
+                .plum-highlight { fill: #f0e6f0; stroke: #8b008b; stroke-width: 1; opacity: 0.6; }
+                .teal-highlight { fill: #d3f3f9; stroke: #006666; stroke-width: 1; opacity: 0.6; }
+                .medgray-highlight { fill: #e0e0e0; stroke: none; }
+                .lightgray-highlight { fill: #f0f0f0; stroke: none; }
+                .bwt-separator { stroke: #666; stroke-width: 1; fill: none; }
+                .arrow { stroke: #333; stroke-width: 2; fill: none; }
+                .arrow-label { font-family: 'Courier New', monospace; font-size: 14px; font-weight: bold; }
+                </style>
+            </defs>
+              <g id="T">
+    <text x="90" y="35" class="label" text-anchor="end">T</text>
+    <text x="126.0" y="35" class="monospace" >h</text>
+    <text x="156.0" y="35" class="monospace" >o</text>
+    <text x="186.0" y="35" class="monospace" >w</text>
+    <text x="216.0" y="35" class="monospace" >$</text>
+    <text x="246.0" y="35" class="monospace" >n</text>
+    <text x="276.0" y="35" class="monospace" >o</text>
+    <text x="306.0" y="35" class="monospace" >w</text>
+    <text x="336.0" y="35" class="monospace" >$</text>
+    <text x="366.0" y="35" class="monospace" >b</text>
+    <text x="396.0" y="35" class="monospace" >r</text>
+    <text x="426.0" y="35" class="monospace" >o</text>
+    <text x="456.0" y="35" class="monospace" >w</text>
+    <text x="486.0" y="35" class="monospace" >n</text>
+    <text x="516.0" y="35" class="monospace" >$</text>
+    <text x="546.0" y="35" class="monospace" >c</text>
+    <text x="576.0" y="35" class="monospace" >o</text>
+    <text x="606.0" y="35" class="monospace" >w</text>
+    <text x="636.0" y="35" class="monospace" >$</text>
+    <text x="666.0" y="35" class="monospace" >#</text>
+  </g>
+  <g id="Offset">
+    <text x="87.0" y="70" class="label" text-anchor="end">Off</text>
+    <text x="135.0" y="70" class="label" text-anchor="end">0</text>
+    <text x="165.0" y="70" class="label" text-anchor="end">1</text>
+    <text x="195.0" y="70" class="label" text-anchor="end">2</text>
+    <text x="225.0" y="70" class="label" text-anchor="end">3</text>
+    <text x="255.0" y="70" class="label" text-anchor="end">4</text>
+    <text x="285.0" y="70" class="label" text-anchor="end">5</text>
+    <text x="315.0" y="70" class="label" text-anchor="end">6</text>
+    <text x="345.0" y="70" class="label" text-anchor="end">7</text>
+    <text x="375.0" y="70" class="label" text-anchor="end">8</text>
+    <text x="405.0" y="70" class="label" text-anchor="end">9</text>
+    <text x="435.0" y="70" class="label" text-anchor="end">10</text>
+    <text x="465.0" y="70" class="label" text-anchor="end">11</text>
+    <text x="495.0" y="70" class="label" text-anchor="end">12</text>
+    <text x="525.0" y="70" class="label" text-anchor="end">13</text>
+    <text x="555.0" y="70" class="label" text-anchor="end">14</text>
+    <text x="585.0" y="70" class="label" text-anchor="end">15</text>
+    <text x="615.0" y="70" class="label" text-anchor="end">16</text>
+    <text x="645.0" y="70" class="label" text-anchor="end">17</text>
+    <text x="675.0" y="70" class="label" text-anchor="end">18</text>
+  </g>
+  <g id="ISA">
+    <text x="90" y="105" class="label" text-anchor="end">ISA</text>
+    <text x="135.0" y="105" class="label" text-anchor="end">7</text>
+    <text x="165.0" y="105" class="label" text-anchor="end">12</text>
+    <text x="195.0" y="105" class="label" text-anchor="end">17</text>
+    <text x="225.0" y="105" class="label" text-anchor="end">4</text>
+    <text x="255.0" y="105" class="label" text-anchor="end">9</text>
+    <text x="285.0" y="105" class="label" text-anchor="end">11</text>
+    <text x="315.0" y="105" class="label" text-anchor="end">16</text>
+    <text x="345.0" y="105" class="label" text-anchor="end">2</text>
+    <text x="375.0" y="105" class="label" text-anchor="end">5</text>
+    <text x="405.0" y="105" class="label" text-anchor="end">14</text>
+    <text x="435.0" y="105" class="label" text-anchor="end">13</text>
+    <text x="465.0" y="105" class="label" text-anchor="end">18</text>
+    <text x="495.0" y="105" class="label" text-anchor="end">8</text>
+    <text x="525.0" y="105" class="label" text-anchor="end">3</text>
+    <text x="555.0" y="105" class="label" text-anchor="end">6</text>
+    <text x="585.0" y="105" class="label" text-anchor="end">10</text>
+    <text x="615.0" y="105" class="label" text-anchor="end">15</text>
+    <text x="645.0" y="105" class="label" text-anchor="end">1</text>
+    <text x="675.0" y="105" class="label" text-anchor="end">0</text>
+  </g>
+  <g id="Phi">
+  <g id="PhiRects">
+    <rect x="143.0" y="119.0" width="55" height="30" class="plum-highlight"/>
+    <rect x="263.0" y="119.0" width="85" height="30" class="plum-highlight"/>
+    <rect x="413.0" y="119.0" width="55" height="30" class="plum-highlight"/>
+    <rect x="503.0" y="119.0" width="55" height="30" class="plum-highlight"/>
+  </g>
+  <g id="PhiVals">
+    <text x="90" y="140" class="label" text-anchor="end">φ</text>
+    <text x="135.0" y="140" class="label" text-anchor="end">14</text>
+    <text x="165.0" y="140" class="label" text-anchor="end">5</text>
+    <text x="195.0" y="140" class="label" text-anchor="end">6</text>
+    <text x="225.0" y="140" class="label" text-anchor="end">13</text>
+    <text x="255.0" y="140" class="label" text-anchor="end">12</text>
+    <text x="285.0" y="140" class="label" text-anchor="end">15</text>
+    <text x="315.0" y="140" class="label" text-anchor="end">16</text>
+    <text x="345.0" y="140" class="label" text-anchor="end">17</text>
+    <text x="375.0" y="140" class="label" text-anchor="end">3</text>
+    <text x="405.0" y="140" class="label" text-anchor="end">10</text>
+    <text x="435.0" y="140" class="label" text-anchor="end">1</text>
+    <text x="465.0" y="140" class="label" text-anchor="end">2</text>
+    <text x="495.0" y="140" class="label" text-anchor="end">0</text>
+    <text x="525.0" y="140" class="label" text-anchor="end">7</text>
+    <text x="555.0" y="140" class="label" text-anchor="end">8</text>
+    <text x="585.0" y="140" class="label" text-anchor="end">4</text>
+    <text x="615.0" y="140" class="label" text-anchor="end">9</text>
+    <text x="645.0" y="140" class="label" text-anchor="end">18</text>
+    <text x="675.0" y="140" class="label" text-anchor="end">11</text>
+  </g>
+  </g>
+  <g id="PhiInv">
+  <g id="PhiInvRects">
+    <rect x="143.0" y="154.0" width="55" height="30" class="plum-highlight"/>
+    <rect x="263.0" y="154.0" width="55" height="30" class="plum-highlight"/>
+    <rect x="323.0" y="154.0" width="55" height="30" class="plum-highlight"/>
+    <rect x="563.0" y="154.0" width="85" height="30" class="plum-highlight"/>
+  </g>
+  <g id="PhiInvVals">
+    <text x="88.5" y="175" class="label" text-anchor="end">φ⁻¹</text>
+    <text x="135.0" y="175" class="label" text-anchor="end">12</text>
+    <text x="165.0" y="175" class="label" text-anchor="end">10</text>
+    <text x="195.0" y="175" class="label" text-anchor="end">11</text>
+    <text x="225.0" y="175" class="label" text-anchor="end">8</text>
+    <text x="255.0" y="175" class="label" text-anchor="end">15</text>
+    <text x="285.0" y="175" class="label" text-anchor="end">1</text>
+    <text x="315.0" y="175" class="label" text-anchor="end">2</text>
+    <text x="345.0" y="175" class="label" text-anchor="end">13</text>
+    <text x="375.0" y="175" class="label" text-anchor="end">14</text>
+    <text x="405.0" y="175" class="label" text-anchor="end">16</text>
+    <text x="435.0" y="175" class="label" text-anchor="end">9</text>
+    <text x="465.0" y="175" class="label" text-anchor="end">18</text>
+    <text x="495.0" y="175" class="label" text-anchor="end">4</text>
+    <text x="525.0" y="175" class="label" text-anchor="end">3</text>
+    <text x="555.0" y="175" class="label" text-anchor="end">0</text>
+    <text x="585.0" y="175" class="label" text-anchor="end">5</text>
+    <text x="615.0" y="175" class="label" text-anchor="end">6</text>
+    <text x="645.0" y="175" class="label" text-anchor="end">7</text>
+    <text x="675.0" y="175" class="label" text-anchor="end">17</text>
+  </g>
+  </g>
+  <g id="PLCP">
+  <g id="PLCPrects">
+    <rect x="143.0" y="189.0" width="85" height="30" class="plum-highlight"/>
+    <rect x="263.0" y="189.0" width="115" height="30" class="plum-highlight"/>
+    <rect x="413.0" y="189.0" width="85" height="30" class="plum-highlight"/>
+    <rect x="503.0" y="189.0" width="55" height="30" class="plum-highlight"/>
+  </g>
+  <g id="PLCPvals">
+    <text x="90" y="210" class="label" text-anchor="end">PLCP</text>
+    <text x="135.0" y="210" class="label" text-anchor="end">0</text>
+    <text x="165.0" y="210" class="label" text-anchor="end">3</text>
+    <text x="195.0" y="210" class="label" text-anchor="end">2</text>
+    <text x="225.0" y="210" class="label" text-anchor="end">1</text>
+    <text x="255.0" y="210" class="label" text-anchor="end">1</text>
+    <text x="285.0" y="210" class="label" text-anchor="end">3</text>
+    <text x="315.0" y="210" class="label" text-anchor="end">2</text>
+    <text x="345.0" y="210" class="label" text-anchor="end">1</text>
+    <text x="375.0" y="210" class="label" text-anchor="end">0</text>
+    <text x="405.0" y="210" class="label" text-anchor="end">0</text>
+    <text x="435.0" y="210" class="label" text-anchor="end">2</text>
+    <text x="465.0" y="210" class="label" text-anchor="end">1</text>
+    <text x="495.0" y="210" class="label" text-anchor="end">0</text>
+    <text x="525.0" y="210" class="label" text-anchor="end">1</text>
+    <text x="555.0" y="210" class="label" text-anchor="end">0</text>
+    <text x="585.0" y="210" class="label" text-anchor="end">0</text>
+    <text x="615.0" y="210" class="label" text-anchor="end">0</text>
+    <text x="645.0" y="210" class="label" text-anchor="end">0</text>
+    <text x="675.0" y="210" class="label" text-anchor="end">0</text>
+  </g>
+  </g>
+  <g id="PLCS">
+  <g id="PLCSrect">
+    <rect x="143.0" y="224.0" width="55" height="30" class="plum-highlight"/>
+    <rect x="263.0" y="224.0" width="85" height="30" class="plum-highlight"/>
+    <rect x="413.0" y="224.0" width="55" height="30" class="plum-highlight"/>
+    <rect x="503.0" y="224.0" width="55" height="30" class="plum-highlight"/>
+  </g>
+  <g id="PLCSvals">
+    <text x="90" y="245" class="label" text-anchor="end">PLCS</text>
+    <text x="135.0" y="245" class="label" text-anchor="end">0</text>
+    <text x="165.0" y="245" class="label" text-anchor="end">0</text>
+    <text x="195.0" y="245" class="label" text-anchor="end">1</text>
+    <text x="225.0" y="245" class="label" text-anchor="end">0</text>
+    <text x="255.0" y="245" class="label" text-anchor="end">0</text>
+    <text x="285.0" y="245" class="label" text-anchor="end">0</text>
+    <text x="315.0" y="245" class="label" text-anchor="end">1</text>
+    <text x="345.0" y="245" class="label" text-anchor="end">2</text>
+    <text x="375.0" y="245" class="label" text-anchor="end">0</text>
+    <text x="405.0" y="245" class="label" text-anchor="end">0</text>
+    <text x="435.0" y="245" class="label" text-anchor="end">0</text>
+    <text x="465.0" y="245" class="label" text-anchor="end">1</text>
+    <text x="495.0" y="245" class="label" text-anchor="end">0</text>
+    <text x="525.0" y="245" class="label" text-anchor="end">0</text>
+    <text x="555.0" y="245" class="label" text-anchor="end">1</text>
+    <text x="585.0" y="245" class="label" text-anchor="end">0</text>
+    <text x="615.0" y="245" class="label" text-anchor="end">0</text>
+    <text x="645.0" y="245" class="label" text-anchor="end">0</text>
+    <text x="675.0" y="245" class="label" text-anchor="end">0</text>
+  </g>
+  </g>
+  <g id="DA">
+    <text x="904.0" y="338.0" class="label" text-anchor="end">DA</text>
+    <text x="904.0" y="373.0" class="label" text-anchor="end">4</text>
+    <text x="904.0" y="408.0" class="label" text-anchor="end">3</text>
+    <text x="904.0" y="443.0" class="label" text-anchor="end">1</text>
+    <text x="904.0" y="478.0" class="label" text-anchor="end">2</text>
+    <text x="904.0" y="513.0" class="label" text-anchor="end">0</text>
+    <text x="904.0" y="548.0" class="label" text-anchor="end">2</text>
+    <text x="904.0" y="583.0" class="label" text-anchor="end">3</text>
+    <text x="904.0" y="618.0" class="label" text-anchor="end">0</text>
+    <text x="904.0" y="653.0" class="label" text-anchor="end">2</text>
+    <text x="904.0" y="688.0" class="label" text-anchor="end">1</text>
+    <text x="904.0" y="723.0" class="label" text-anchor="end">3</text>
+    <text x="904.0" y="758.0" class="label" text-anchor="end">1</text>
+    <text x="904.0" y="793.0" class="label" text-anchor="end">0</text>
+    <text x="904.0" y="828.0" class="label" text-anchor="end">2</text>
+    <text x="904.0" y="863.0" class="label" text-anchor="end">2</text>
+    <text x="904.0" y="898.0" class="label" text-anchor="end">3</text>
+    <text x="904.0" y="933.0" class="label" text-anchor="end">1</text>
+    <text x="904.0" y="968.0" class="label" text-anchor="end">0</text>
+    <text x="904.0" y="1003.0" class="label" text-anchor="end">2</text>
+  </g>
+  <g id="SA">
+    <text x="874.0" y="338.0" class="label" text-anchor="end">SA</text>
+    <text x="874.0" y="373.0" class="label" text-anchor="end">18</text>
+    <text x="874.0" y="408.0" class="label" text-anchor="end">17</text>
+    <text x="874.0" y="443.0" class="label" text-anchor="end">7</text>
+    <text x="874.0" y="478.0" class="label" text-anchor="end">13</text>
+    <text x="874.0" y="513.0" class="label" text-anchor="end">3</text>
+    <text x="874.0" y="548.0" class="label" text-anchor="end">8</text>
+    <text x="874.0" y="583.0" class="label" text-anchor="end">14</text>
+    <text x="874.0" y="618.0" class="label" text-anchor="end">0</text>
+    <text x="874.0" y="653.0" class="label" text-anchor="end">12</text>
+    <text x="874.0" y="688.0" class="label" text-anchor="end">4</text>
+    <text x="874.0" y="723.0" class="label" text-anchor="end">15</text>
+    <text x="874.0" y="758.0" class="label" text-anchor="end">5</text>
+    <text x="874.0" y="793.0" class="label" text-anchor="end">1</text>
+    <text x="874.0" y="828.0" class="label" text-anchor="end">10</text>
+    <text x="874.0" y="863.0" class="label" text-anchor="end">9</text>
+    <text x="874.0" y="898.0" class="label" text-anchor="end">16</text>
+    <text x="874.0" y="933.0" class="label" text-anchor="end">6</text>
+    <text x="874.0" y="968.0" class="label" text-anchor="end">2</text>
+    <text x="874.0" y="1003.0" class="label" text-anchor="end">11</text>
+  </g>
+  <g id="LF">
+  <g id="LFrects">
+    <rect x="805.5" y="387.25" width="26" height="66" class="teal-highlight"/>
+    <rect x="805.5" y="527.25" width="26" height="66" class="teal-highlight"/>
+    <rect x="805.5" y="877.25" width="26" height="136" class="teal-highlight"/>
+  </g>
+  <g id="LF">
+    <text x="829.0" y="338.0" class="label" text-anchor="end">LF</text>
+    <text x="829.0" y="373.0" class="label" text-anchor="end">1</text>
+    <text x="829.0" y="408.0" class="label" text-anchor="end">15</text>
+    <text x="829.0" y="443.0" class="label" text-anchor="end">16</text>
+    <text x="829.0" y="478.0" class="label" text-anchor="end">8</text>
+    <text x="829.0" y="513.0" class="label" text-anchor="end">17</text>
+    <text x="829.0" y="548.0" class="label" text-anchor="end">2</text>
+    <text x="829.0" y="583.0" class="label" text-anchor="end">3</text>
+    <text x="829.0" y="618.0" class="label" text-anchor="end">0</text>
+    <text x="829.0" y="653.0" class="label" text-anchor="end">18</text>
+    <text x="829.0" y="688.0" class="label" text-anchor="end">4</text>
+    <text x="829.0" y="723.0" class="label" text-anchor="end">6</text>
+    <text x="829.0" y="758.0" class="label" text-anchor="end">9</text>
+    <text x="829.0" y="793.0" class="label" text-anchor="end">7</text>
+    <text x="829.0" y="828.0" class="label" text-anchor="end">14</text>
+    <text x="829.0" y="863.0" class="label" text-anchor="end">5</text>
+    <text x="829.0" y="898.0" class="label" text-anchor="end">10</text>
+    <text x="829.0" y="933.0" class="label" text-anchor="end">11</text>
+    <text x="829.0" y="968.0" class="label" text-anchor="end">12</text>
+    <text x="829.0" y="1003.0" class="label" text-anchor="end">13</text>
+  </g>
+  </g>
+  <g id="LCS">
+  <g id="LCSvals">
+    <text x="784.0" y="338.0" class="label" text-anchor="end">LCS</text>
+    <text x="784.0" y="373.0" class="label" text-anchor="end">0</text>
+    <text x="784.0" y="408.0" class="label" text-anchor="end">0</text>
+    <text x="784.0" y="443.0" class="label" text-anchor="end">2</text>
+    <text x="784.0" y="478.0" class="label" text-anchor="end">0</text>
+    <text x="784.0" y="513.0" class="label" text-anchor="end">0</text>
+    <text x="784.0" y="548.0" class="label" text-anchor="end">0</text>
+    <text x="784.0" y="583.0" class="label" text-anchor="end">1</text>
+    <text x="784.0" y="618.0" class="label" text-anchor="end">0</text>
+    <text x="784.0" y="653.0" class="label" text-anchor="end">0</text>
+    <text x="784.0" y="688.0" class="label" text-anchor="end">0</text>
+    <text x="784.0" y="723.0" class="label" text-anchor="end">0</text>
+    <text x="784.0" y="758.0" class="label" text-anchor="end">0</text>
+    <text x="784.0" y="793.0" class="label" text-anchor="end">0</text>
+    <text x="784.0" y="828.0" class="label" text-anchor="end">0</text>
+    <text x="784.0" y="863.0" class="label" text-anchor="end">0</text>
+    <text x="784.0" y="898.0" class="label" text-anchor="end">0</text>
+    <text x="784.0" y="933.0" class="label" text-anchor="end">1</text>
+    <text x="784.0" y="968.0" class="label" text-anchor="end">1</text>
+    <text x="784.0" y="1003.0" class="label" text-anchor="end">1</text>
+  </g>
+  </g>
+  <g id="L">
+    <rect x="716.5" y="350.25" width="30" height="665" class="l-column"/>
+    <text x="736.0" y="338.0" class="label" text-anchor="end">L</text>
+    <text x="727.0" y="373.0" class="monospace" fill="black">$</text>
+    <text x="727.0" y="408.0" class="monospace" fill="black">w</text>
+    <text x="727.0" y="443.0" class="monospace" fill="red">w</text>
+    <text x="727.0" y="478.0" class="monospace" fill="black">n</text>
+    <text x="727.0" y="513.0" class="monospace" fill="black">w</text>
+    <text x="727.0" y="548.0" class="monospace" fill="black">$</text>
+    <text x="727.0" y="583.0" class="monospace" fill="red">$</text>
+    <text x="727.0" y="618.0" class="monospace" fill="black">#</text>
+    <text x="727.0" y="653.0" class="monospace" fill="black">w</text>
+    <text x="727.0" y="688.0" class="monospace" fill="black">$</text>
+    <text x="727.0" y="723.0" class="monospace" fill="black">c</text>
+    <text x="727.0" y="758.0" class="monospace" fill="black">n</text>
+    <text x="727.0" y="793.0" class="monospace" fill="black">h</text>
+    <text x="727.0" y="828.0" class="monospace" fill="black">r</text>
+    <text x="727.0" y="863.0" class="monospace" fill="black">b</text>
+    <text x="727.0" y="898.0" class="monospace" fill="black">o</text>
+    <text x="727.0" y="933.0" class="monospace" fill="red">o</text>
+    <text x="727.0" y="968.0" class="monospace" fill="red">o</text>
+    <text x="727.0" y="1003.0" class="monospace" fill="red">o</text>
+  </g>
+  <g id="BWM">
+  <g id="BWMCol0">
+    <text x="458.0" y="373.0" class="monospace" fill="black">#</text>
+    <text x="458.0" y="408.0" class="monospace" fill="black">$</text>
+    <text x="458.0" y="443.0" class="monospace" fill="blue">$</text>
+    <text x="458.0" y="478.0" class="monospace" fill="blue">$</text>
+    <text x="458.0" y="513.0" class="monospace" fill="blue">$</text>
+    <text x="458.0" y="548.0" class="monospace" fill="black">b</text>
+    <text x="458.0" y="583.0" class="monospace" fill="black">c</text>
+    <text x="458.0" y="618.0" class="monospace" fill="black">h</text>
+    <text x="458.0" y="653.0" class="monospace" fill="black">n</text>
+    <text x="458.0" y="688.0" class="monospace" fill="blue">n</text>
+    <text x="458.0" y="723.0" class="monospace" fill="black">o</text>
+    <text x="458.0" y="758.0" class="monospace" fill="blue">o</text>
+    <text x="458.0" y="793.0" class="monospace" fill="blue">o</text>
+    <text x="458.0" y="828.0" class="monospace" fill="blue">o</text>
+    <text x="458.0" y="863.0" class="monospace" fill="black">r</text>
+    <text x="458.0" y="898.0" class="monospace" fill="black">w</text>
+    <text x="458.0" y="933.0" class="monospace" fill="blue">w</text>
+    <text x="458.0" y="968.0" class="monospace" fill="blue">w</text>
+    <text x="458.0" y="1003.0" class="monospace" fill="blue">w</text>
+  </g>
+  <g id="BWMCol1">
+    <text x="488.0" y="373.0" class="monospace" fill="black">h</text>
+    <text x="488.0" y="408.0" class="monospace" fill="black">#</text>
+    <text x="488.0" y="443.0" class="monospace" fill="black">b</text>
+    <text x="488.0" y="478.0" class="monospace" fill="black">c</text>
+    <text x="488.0" y="513.0" class="monospace" fill="black">n</text>
+    <text x="488.0" y="548.0" class="monospace" fill="black">r</text>
+    <text x="488.0" y="583.0" class="monospace" fill="black">o</text>
+    <text x="488.0" y="618.0" class="monospace" fill="black">o</text>
+    <text x="488.0" y="653.0" class="monospace" fill="black">$</text>
+    <text x="488.0" y="688.0" class="monospace" fill="black">o</text>
+    <text x="488.0" y="723.0" class="monospace" fill="black">w</text>
+    <text x="488.0" y="758.0" class="monospace" fill="blue">w</text>
+    <text x="488.0" y="793.0" class="monospace" fill="blue">w</text>
+    <text x="488.0" y="828.0" class="monospace" fill="blue">w</text>
+    <text x="488.0" y="863.0" class="monospace" fill="black">o</text>
+    <text x="488.0" y="898.0" class="monospace" fill="black">$</text>
+    <text x="488.0" y="933.0" class="monospace" fill="blue">$</text>
+    <text x="488.0" y="968.0" class="monospace" fill="blue">$</text>
+    <text x="488.0" y="1003.0" class="monospace" fill="black">n</text>
+  </g>
+  <g id="BWMCol2">
+    <text x="501.0" y="373.0" class="monospace" fill="black">o</text>
+    <text x="501.0" y="408.0" class="monospace" fill="black">h</text>
+    <text x="501.0" y="443.0" class="monospace" fill="black">r</text>
+    <text x="501.0" y="478.0" class="monospace" fill="black">o</text>
+    <text x="501.0" y="513.0" class="monospace" fill="black">o</text>
+    <text x="501.0" y="548.0" class="monospace" fill="black">o</text>
+    <text x="501.0" y="583.0" class="monospace" fill="black">w</text>
+    <text x="501.0" y="618.0" class="monospace" fill="black">w</text>
+    <text x="501.0" y="653.0" class="monospace" fill="black">c</text>
+    <text x="501.0" y="688.0" class="monospace" fill="black">w</text>
+    <text x="501.0" y="723.0" class="monospace" fill="black">$</text>
+    <text x="501.0" y="758.0" class="monospace" fill="blue">$</text>
+    <text x="501.0" y="793.0" class="monospace" fill="blue">$</text>
+    <text x="501.0" y="828.0" class="monospace" fill="black">n</text>
+    <text x="501.0" y="863.0" class="monospace" fill="black">w</text>
+    <text x="501.0" y="898.0" class="monospace" fill="black">#</text>
+    <text x="501.0" y="933.0" class="monospace" fill="black">b</text>
+    <text x="501.0" y="968.0" class="monospace" fill="black">n</text>
+    <text x="501.0" y="1003.0" class="monospace" fill="black">$</text>
+  </g>
+  <g id="BWMCol3">
+    <text x="514.0" y="373.0" class="monospace" fill="black">w</text>
+    <text x="514.0" y="408.0" class="monospace" fill="black">o</text>
+    <text x="514.0" y="443.0" class="monospace" fill="black">o</text>
+    <text x="514.0" y="478.0" class="monospace" fill="black">w</text>
+    <text x="514.0" y="513.0" class="monospace" fill="black">w</text>
+    <text x="514.0" y="548.0" class="monospace" fill="black">w</text>
+    <text x="514.0" y="583.0" class="monospace" fill="black">$</text>
+    <text x="514.0" y="618.0" class="monospace" fill="black">$</text>
+    <text x="514.0" y="653.0" class="monospace" fill="black">o</text>
+    <text x="514.0" y="688.0" class="monospace" fill="black">$</text>
+    <text x="514.0" y="723.0" class="monospace" fill="black">#</text>
+    <text x="514.0" y="758.0" class="monospace" fill="black">b</text>
+    <text x="514.0" y="793.0" class="monospace" fill="black">n</text>
+    <text x="514.0" y="828.0" class="monospace" fill="black">$</text>
+    <text x="514.0" y="863.0" class="monospace" fill="black">n</text>
+    <text x="514.0" y="898.0" class="monospace" fill="black">h</text>
+    <text x="514.0" y="933.0" class="monospace" fill="black">r</text>
+    <text x="514.0" y="968.0" class="monospace" fill="black">o</text>
+    <text x="514.0" y="1003.0" class="monospace" fill="black">c</text>
+  </g>
+  <g id="BWMCol4">
+    <text x="527.0" y="373.0" class="monospace" fill="black">$</text>
+    <text x="527.0" y="408.0" class="monospace" fill="black">w</text>
+    <text x="527.0" y="443.0" class="monospace" fill="black">w</text>
+    <text x="527.0" y="478.0" class="monospace" fill="black">$</text>
+    <text x="527.0" y="513.0" class="monospace" fill="black">$</text>
+    <text x="527.0" y="548.0" class="monospace" fill="black">n</text>
+    <text x="527.0" y="583.0" class="monospace" fill="black">#</text>
+    <text x="527.0" y="618.0" class="monospace" fill="black">n</text>
+    <text x="527.0" y="653.0" class="monospace" fill="black">w</text>
+    <text x="527.0" y="688.0" class="monospace" fill="black">b</text>
+    <text x="527.0" y="723.0" class="monospace" fill="black">h</text>
+    <text x="527.0" y="758.0" class="monospace" fill="black">r</text>
+    <text x="527.0" y="793.0" class="monospace" fill="black">o</text>
+    <text x="527.0" y="828.0" class="monospace" fill="black">c</text>
+    <text x="527.0" y="863.0" class="monospace" fill="black">$</text>
+    <text x="527.0" y="898.0" class="monospace" fill="black">o</text>
+    <text x="527.0" y="933.0" class="monospace" fill="black">o</text>
+    <text x="527.0" y="968.0" class="monospace" fill="black">w</text>
+    <text x="527.0" y="1003.0" class="monospace" fill="black">o</text>
+  </g>
+  <g id="BWMCol5">
+    <text x="540.0" y="373.0" class="monospace" fill="black">n</text>
+    <text x="540.0" y="408.0" class="monospace" fill="black">$</text>
+    <text x="540.0" y="443.0" class="monospace" fill="black">n</text>
+    <text x="540.0" y="478.0" class="monospace" fill="black">#</text>
+    <text x="540.0" y="513.0" class="monospace" fill="black">b</text>
+    <text x="540.0" y="548.0" class="monospace" fill="black">$</text>
+    <text x="540.0" y="583.0" class="monospace" fill="black">h</text>
+    <text x="540.0" y="618.0" class="monospace" fill="black">o</text>
+    <text x="540.0" y="653.0" class="monospace" fill="black">$</text>
+    <text x="540.0" y="688.0" class="monospace" fill="black">r</text>
+    <text x="540.0" y="723.0" class="monospace" fill="black">o</text>
+    <text x="540.0" y="758.0" class="monospace" fill="black">o</text>
+    <text x="540.0" y="793.0" class="monospace" fill="black">w</text>
+    <text x="540.0" y="828.0" class="monospace" fill="black">o</text>
+    <text x="540.0" y="863.0" class="monospace" fill="black">c</text>
+    <text x="540.0" y="898.0" class="monospace" fill="black">w</text>
+    <text x="540.0" y="933.0" class="monospace" fill="black">w</text>
+    <text x="540.0" y="968.0" class="monospace" fill="black">$</text>
+    <text x="540.0" y="1003.0" class="monospace" fill="black">w</text>
+  </g>
+  <g id="BWMCol6">
+    <text x="553.0" y="373.0" class="monospace" fill="black">o</text>
+    <text x="553.0" y="408.0" class="monospace" fill="black">n</text>
+    <text x="553.0" y="443.0" class="monospace" fill="black">$</text>
+    <text x="553.0" y="478.0" class="monospace" fill="black">h</text>
+    <text x="553.0" y="513.0" class="monospace" fill="black">r</text>
+    <text x="553.0" y="548.0" class="monospace" fill="black">c</text>
+    <text x="553.0" y="583.0" class="monospace" fill="black">o</text>
+    <text x="553.0" y="618.0" class="monospace" fill="black">w</text>
+    <text x="553.0" y="653.0" class="monospace" fill="black">#</text>
+    <text x="553.0" y="688.0" class="monospace" fill="black">o</text>
+    <text x="553.0" y="723.0" class="monospace" fill="black">w</text>
+    <text x="553.0" y="758.0" class="monospace" fill="black">w</text>
+    <text x="553.0" y="793.0" class="monospace" fill="black">$</text>
+    <text x="553.0" y="828.0" class="monospace" fill="black">w</text>
+    <text x="553.0" y="863.0" class="monospace" fill="black">o</text>
+    <text x="553.0" y="898.0" class="monospace" fill="black">$</text>
+    <text x="553.0" y="933.0" class="monospace" fill="black">n</text>
+    <text x="553.0" y="968.0" class="monospace" fill="black">b</text>
+    <text x="553.0" y="1003.0" class="monospace" fill="black">$</text>
+  </g>
+  <g id="BWMCol7">
+    <text x="566.0" y="373.0" class="monospace" fill="black">w</text>
+    <text x="566.0" y="408.0" class="monospace" fill="black">o</text>
+    <text x="566.0" y="443.0" class="monospace" fill="black">c</text>
+    <text x="566.0" y="478.0" class="monospace" fill="black">o</text>
+    <text x="566.0" y="513.0" class="monospace" fill="black">o</text>
+    <text x="566.0" y="548.0" class="monospace" fill="black">o</text>
+    <text x="566.0" y="583.0" class="monospace" fill="black">w</text>
+    <text x="566.0" y="618.0" class="monospace" fill="black">$</text>
+    <text x="566.0" y="653.0" class="monospace" fill="black">h</text>
+    <text x="566.0" y="688.0" class="monospace" fill="black">w</text>
+    <text x="566.0" y="723.0" class="monospace" fill="black">$</text>
+    <text x="566.0" y="758.0" class="monospace" fill="black">n</text>
+    <text x="566.0" y="793.0" class="monospace" fill="black">b</text>
+    <text x="566.0" y="828.0" class="monospace" fill="black">$</text>
+    <text x="566.0" y="863.0" class="monospace" fill="black">w</text>
+    <text x="566.0" y="898.0" class="monospace" fill="black">n</text>
+    <text x="566.0" y="933.0" class="monospace" fill="black">$</text>
+    <text x="566.0" y="968.0" class="monospace" fill="black">r</text>
+    <text x="566.0" y="1003.0" class="monospace" fill="black">#</text>
+  </g>
+  <g id="BWMCol8">
+    <text x="579.0" y="373.0" class="monospace" fill="black">$</text>
+    <text x="579.0" y="408.0" class="monospace" fill="black">w</text>
+    <text x="579.0" y="443.0" class="monospace" fill="black">o</text>
+    <text x="579.0" y="478.0" class="monospace" fill="black">w</text>
+    <text x="579.0" y="513.0" class="monospace" fill="black">w</text>
+    <text x="579.0" y="548.0" class="monospace" fill="black">w</text>
+    <text x="579.0" y="583.0" class="monospace" fill="black">$</text>
+    <text x="579.0" y="618.0" class="monospace" fill="black">b</text>
+    <text x="579.0" y="653.0" class="monospace" fill="black">o</text>
+    <text x="579.0" y="688.0" class="monospace" fill="black">n</text>
+    <text x="579.0" y="723.0" class="monospace" fill="black">n</text>
+    <text x="579.0" y="758.0" class="monospace" fill="black">$</text>
+    <text x="579.0" y="793.0" class="monospace" fill="black">r</text>
+    <text x="579.0" y="828.0" class="monospace" fill="black">#</text>
+    <text x="579.0" y="863.0" class="monospace" fill="black">$</text>
+    <text x="579.0" y="898.0" class="monospace" fill="black">o</text>
+    <text x="579.0" y="933.0" class="monospace" fill="black">c</text>
+    <text x="579.0" y="968.0" class="monospace" fill="black">o</text>
+    <text x="579.0" y="1003.0" class="monospace" fill="black">h</text>
+  </g>
+  <g id="BWMCol9">
+    <text x="592.0" y="373.0" class="monospace" fill="black">b</text>
+    <text x="592.0" y="408.0" class="monospace" fill="black">$</text>
+    <text x="592.0" y="443.0" class="monospace" fill="black">w</text>
+    <text x="592.0" y="478.0" class="monospace" fill="black">$</text>
+    <text x="592.0" y="513.0" class="monospace" fill="black">n</text>
+    <text x="592.0" y="548.0" class="monospace" fill="black">$</text>
+    <text x="592.0" y="583.0" class="monospace" fill="black">n</text>
+    <text x="592.0" y="618.0" class="monospace" fill="black">r</text>
+    <text x="592.0" y="653.0" class="monospace" fill="black">w</text>
+    <text x="592.0" y="688.0" class="monospace" fill="black">$</text>
+    <text x="592.0" y="723.0" class="monospace" fill="black">o</text>
+    <text x="592.0" y="758.0" class="monospace" fill="black">c</text>
+    <text x="592.0" y="793.0" class="monospace" fill="black">o</text>
+    <text x="592.0" y="828.0" class="monospace" fill="black">h</text>
+    <text x="592.0" y="863.0" class="monospace" fill="black">#</text>
+    <text x="592.0" y="898.0" class="monospace" fill="black">w</text>
+    <text x="592.0" y="933.0" class="monospace" fill="black">o</text>
+    <text x="592.0" y="968.0" class="monospace" fill="black">w</text>
+    <text x="592.0" y="1003.0" class="monospace" fill="black">o</text>
+  </g>
+  <g id="BWMCol10">
+    <text x="605.0" y="373.0" class="monospace" fill="black">r</text>
+    <text x="605.0" y="408.0" class="monospace" fill="black">b</text>
+    <text x="605.0" y="443.0" class="monospace" fill="black">$</text>
+    <text x="605.0" y="478.0" class="monospace" fill="black">n</text>
+    <text x="605.0" y="513.0" class="monospace" fill="black">$</text>
+    <text x="605.0" y="548.0" class="monospace" fill="black">#</text>
+    <text x="605.0" y="583.0" class="monospace" fill="black">o</text>
+    <text x="605.0" y="618.0" class="monospace" fill="black">o</text>
+    <text x="605.0" y="653.0" class="monospace" fill="black">$</text>
+    <text x="605.0" y="688.0" class="monospace" fill="black">c</text>
+    <text x="605.0" y="723.0" class="monospace" fill="black">w</text>
+    <text x="605.0" y="758.0" class="monospace" fill="black">o</text>
+    <text x="605.0" y="793.0" class="monospace" fill="black">w</text>
+    <text x="605.0" y="828.0" class="monospace" fill="black">o</text>
+    <text x="605.0" y="863.0" class="monospace" fill="black">h</text>
+    <text x="605.0" y="898.0" class="monospace" fill="black">$</text>
+    <text x="605.0" y="933.0" class="monospace" fill="black">w</text>
+    <text x="605.0" y="968.0" class="monospace" fill="black">n</text>
+    <text x="605.0" y="1003.0" class="monospace" fill="black">w</text>
+  </g>
+  <g id="BWMCol11">
+    <text x="618.0" y="373.0" class="monospace" fill="black">o</text>
+    <text x="618.0" y="408.0" class="monospace" fill="black">r</text>
+    <text x="618.0" y="443.0" class="monospace" fill="black">#</text>
+    <text x="618.0" y="478.0" class="monospace" fill="black">o</text>
+    <text x="618.0" y="513.0" class="monospace" fill="black">c</text>
+    <text x="618.0" y="548.0" class="monospace" fill="black">h</text>
+    <text x="618.0" y="583.0" class="monospace" fill="black">w</text>
+    <text x="618.0" y="618.0" class="monospace" fill="black">w</text>
+    <text x="618.0" y="653.0" class="monospace" fill="black">n</text>
+    <text x="618.0" y="688.0" class="monospace" fill="black">o</text>
+    <text x="618.0" y="723.0" class="monospace" fill="black">$</text>
+    <text x="618.0" y="758.0" class="monospace" fill="black">w</text>
+    <text x="618.0" y="793.0" class="monospace" fill="black">n</text>
+    <text x="618.0" y="828.0" class="monospace" fill="black">w</text>
+    <text x="618.0" y="863.0" class="monospace" fill="black">o</text>
+    <text x="618.0" y="898.0" class="monospace" fill="black">b</text>
+    <text x="618.0" y="933.0" class="monospace" fill="black">$</text>
+    <text x="618.0" y="968.0" class="monospace" fill="black">$</text>
+    <text x="618.0" y="1003.0" class="monospace" fill="black">$</text>
+  </g>
+  <g id="BWMCol12">
+    <text x="631.0" y="373.0" class="monospace" fill="black">w</text>
+    <text x="631.0" y="408.0" class="monospace" fill="black">o</text>
+    <text x="631.0" y="443.0" class="monospace" fill="black">h</text>
+    <text x="631.0" y="478.0" class="monospace" fill="black">w</text>
+    <text x="631.0" y="513.0" class="monospace" fill="black">o</text>
+    <text x="631.0" y="548.0" class="monospace" fill="black">o</text>
+    <text x="631.0" y="583.0" class="monospace" fill="black">$</text>
+    <text x="631.0" y="618.0" class="monospace" fill="black">n</text>
+    <text x="631.0" y="653.0" class="monospace" fill="black">o</text>
+    <text x="631.0" y="688.0" class="monospace" fill="black">w</text>
+    <text x="631.0" y="723.0" class="monospace" fill="black">b</text>
+    <text x="631.0" y="758.0" class="monospace" fill="black">$</text>
+    <text x="631.0" y="793.0" class="monospace" fill="black">$</text>
+    <text x="631.0" y="828.0" class="monospace" fill="black">$</text>
+    <text x="631.0" y="863.0" class="monospace" fill="black">w</text>
+    <text x="631.0" y="898.0" class="monospace" fill="black">r</text>
+    <text x="631.0" y="933.0" class="monospace" fill="black">#</text>
+    <text x="631.0" y="968.0" class="monospace" fill="black">c</text>
+    <text x="631.0" y="1003.0" class="monospace" fill="black">n</text>
+  </g>
+  <g id="BWMCol13">
+    <text x="644.0" y="373.0" class="monospace" fill="black">n</text>
+    <text x="644.0" y="408.0" class="monospace" fill="black">w</text>
+    <text x="644.0" y="443.0" class="monospace" fill="black">o</text>
+    <text x="644.0" y="478.0" class="monospace" fill="black">$</text>
+    <text x="644.0" y="513.0" class="monospace" fill="black">w</text>
+    <text x="644.0" y="548.0" class="monospace" fill="black">w</text>
+    <text x="644.0" y="583.0" class="monospace" fill="black">b</text>
+    <text x="644.0" y="618.0" class="monospace" fill="black">$</text>
+    <text x="644.0" y="653.0" class="monospace" fill="black">w</text>
+    <text x="644.0" y="688.0" class="monospace" fill="black">$</text>
+    <text x="644.0" y="723.0" class="monospace" fill="black">r</text>
+    <text x="644.0" y="758.0" class="monospace" fill="black">#</text>
+    <text x="644.0" y="793.0" class="monospace" fill="black">c</text>
+    <text x="644.0" y="828.0" class="monospace" fill="black">n</text>
+    <text x="644.0" y="863.0" class="monospace" fill="black">$</text>
+    <text x="644.0" y="898.0" class="monospace" fill="black">o</text>
+    <text x="644.0" y="933.0" class="monospace" fill="black">h</text>
+    <text x="644.0" y="968.0" class="monospace" fill="black">o</text>
+    <text x="644.0" y="1003.0" class="monospace" fill="black">o</text>
+  </g>
+  <g id="BWMCol14">
+    <text x="657.0" y="373.0" class="monospace" fill="black">$</text>
+    <text x="657.0" y="408.0" class="monospace" fill="black">n</text>
+    <text x="657.0" y="443.0" class="monospace" fill="black">w</text>
+    <text x="657.0" y="478.0" class="monospace" fill="black">b</text>
+    <text x="657.0" y="513.0" class="monospace" fill="black">$</text>
+    <text x="657.0" y="548.0" class="monospace" fill="black">$</text>
+    <text x="657.0" y="583.0" class="monospace" fill="black">r</text>
+    <text x="657.0" y="618.0" class="monospace" fill="black">c</text>
+    <text x="657.0" y="653.0" class="monospace" fill="black">$</text>
+    <text x="657.0" y="688.0" class="monospace" fill="black">#</text>
+    <text x="657.0" y="723.0" class="monospace" fill="black">o</text>
+    <text x="657.0" y="758.0" class="monospace" fill="black">h</text>
+    <text x="657.0" y="793.0" class="monospace" fill="black">o</text>
+    <text x="657.0" y="828.0" class="monospace" fill="black">o</text>
+    <text x="657.0" y="863.0" class="monospace" fill="black">n</text>
+    <text x="657.0" y="898.0" class="monospace" fill="black">w</text>
+    <text x="657.0" y="933.0" class="monospace" fill="black">o</text>
+    <text x="657.0" y="968.0" class="monospace" fill="black">w</text>
+    <text x="657.0" y="1003.0" class="monospace" fill="black">w</text>
+  </g>
+  <g id="BWMCol15">
+    <text x="670.0" y="373.0" class="monospace" fill="black">c</text>
+    <text x="670.0" y="408.0" class="monospace" fill="black">$</text>
+    <text x="670.0" y="443.0" class="monospace" fill="black">$</text>
+    <text x="670.0" y="478.0" class="monospace" fill="black">r</text>
+    <text x="670.0" y="513.0" class="monospace" fill="black">#</text>
+    <text x="670.0" y="548.0" class="monospace" fill="black">n</text>
+    <text x="670.0" y="583.0" class="monospace" fill="black">o</text>
+    <text x="670.0" y="618.0" class="monospace" fill="black">o</text>
+    <text x="670.0" y="653.0" class="monospace" fill="black">b</text>
+    <text x="670.0" y="688.0" class="monospace" fill="black">h</text>
+    <text x="670.0" y="723.0" class="monospace" fill="black">w</text>
+    <text x="670.0" y="758.0" class="monospace" fill="black">o</text>
+    <text x="670.0" y="793.0" class="monospace" fill="black">w</text>
+    <text x="670.0" y="828.0" class="monospace" fill="black">w</text>
+    <text x="670.0" y="863.0" class="monospace" fill="black">o</text>
+    <text x="670.0" y="898.0" class="monospace" fill="black">n</text>
+    <text x="670.0" y="933.0" class="monospace" fill="black">w</text>
+    <text x="670.0" y="968.0" class="monospace" fill="black">$</text>
+    <text x="670.0" y="1003.0" class="monospace" fill="black">$</text>
+  </g>
+  <g id="BWMCol16">
+    <text x="683.0" y="373.0" class="monospace" fill="black">o</text>
+    <text x="683.0" y="408.0" class="monospace" fill="black">c</text>
+    <text x="683.0" y="443.0" class="monospace" fill="black">n</text>
+    <text x="683.0" y="478.0" class="monospace" fill="black">o</text>
+    <text x="683.0" y="513.0" class="monospace" fill="black">h</text>
+    <text x="683.0" y="548.0" class="monospace" fill="black">o</text>
+    <text x="683.0" y="583.0" class="monospace" fill="black">w</text>
+    <text x="683.0" y="618.0" class="monospace" fill="black">w</text>
+    <text x="683.0" y="653.0" class="monospace" fill="black">r</text>
+    <text x="683.0" y="688.0" class="monospace" fill="black">o</text>
+    <text x="683.0" y="723.0" class="monospace" fill="black">n</text>
+    <text x="683.0" y="758.0" class="monospace" fill="black">w</text>
+    <text x="683.0" y="793.0" class="monospace" fill="black">$</text>
+    <text x="683.0" y="828.0" class="monospace" fill="black">$</text>
+    <text x="683.0" y="863.0" class="monospace" fill="black">w</text>
+    <text x="683.0" y="898.0" class="monospace" fill="black">$</text>
+    <text x="683.0" y="933.0" class="monospace" fill="black">$</text>
+    <text x="683.0" y="968.0" class="monospace" fill="black">#</text>
+    <text x="683.0" y="1003.0" class="monospace" fill="black">b</text>
+  </g>
+  <g id="BWMCol17">
+    <text x="696.0" y="373.0" class="monospace" fill="black">w</text>
+    <text x="696.0" y="408.0" class="monospace" fill="black">o</text>
+    <text x="696.0" y="443.0" class="monospace" fill="red">o</text>
+    <text x="696.0" y="478.0" class="monospace" fill="black">w</text>
+    <text x="696.0" y="513.0" class="monospace" fill="black">o</text>
+    <text x="696.0" y="548.0" class="monospace" fill="black">w</text>
+    <text x="696.0" y="583.0" class="monospace" fill="black">n</text>
+    <text x="696.0" y="618.0" class="monospace" fill="black">$</text>
+    <text x="696.0" y="653.0" class="monospace" fill="black">o</text>
+    <text x="696.0" y="688.0" class="monospace" fill="black">w</text>
+    <text x="696.0" y="723.0" class="monospace" fill="black">$</text>
+    <text x="696.0" y="758.0" class="monospace" fill="black">$</text>
+    <text x="696.0" y="793.0" class="monospace" fill="black">#</text>
+    <text x="696.0" y="828.0" class="monospace" fill="black">b</text>
+    <text x="696.0" y="863.0" class="monospace" fill="black">$</text>
+    <text x="696.0" y="898.0" class="monospace" fill="black">c</text>
+    <text x="696.0" y="933.0" class="monospace" fill="black">n</text>
+    <text x="696.0" y="968.0" class="monospace" fill="black">h</text>
+    <text x="696.0" y="1003.0" class="monospace" fill="black">r</text>
+  </g>
+  </g>
+  <g id="LCSrects">
+  <g id="LCSrect1">
+    <rect x="692.0" y="420" width="56" height="35" class="red-highlight"/>
+    <rect x="705.0" y="560" width="43" height="35" class="red-highlight"/>
+    <rect x="705.0" y="910" width="43" height="35" class="red-highlight"/>
+    <rect x="705.0" y="945" width="43" height="35" class="red-highlight"/>
+    <rect x="705.0" y="980" width="43" height="35" class="red-highlight"/>
+  </g>
+  <g id="LCSrect2">
+    <rect x="692.0" y="385" width="56" height="35" class="red-outline"/>
+    <rect x="705.0" y="525" width="43" height="35" class="red-outline"/>
+    <rect x="705.0" y="875" width="43" height="35" class="red-outline"/>
+    <rect x="705.0" y="910" width="43" height="35" class="red-outline"/>
+    <rect x="705.0" y="945" width="43" height="35" class="red-outline"/>
+  </g>
+  </g>
+  <g id="F">
+    <rect x="453.5" y="350.25" width="30" height="665" class="f-column"/>
+    <text x="473.0" y="338.0" class="label" text-anchor="end">F</text>
+    <text x="464.0" y="373.0" class="monospace" fill="black">#</text>
+    <text x="464.0" y="408.0" class="monospace" fill="black">$</text>
+    <text x="464.0" y="443.0" class="monospace" fill="blue">$</text>
+    <text x="464.0" y="478.0" class="monospace" fill="blue">$</text>
+    <text x="464.0" y="513.0" class="monospace" fill="blue">$</text>
+    <text x="464.0" y="548.0" class="monospace" fill="black">b</text>
+    <text x="464.0" y="583.0" class="monospace" fill="black">c</text>
+    <text x="464.0" y="618.0" class="monospace" fill="black">h</text>
+    <text x="464.0" y="653.0" class="monospace" fill="black">n</text>
+    <text x="464.0" y="688.0" class="monospace" fill="blue">n</text>
+    <text x="464.0" y="723.0" class="monospace" fill="black">o</text>
+    <text x="464.0" y="758.0" class="monospace" fill="blue">o</text>
+    <text x="464.0" y="793.0" class="monospace" fill="blue">o</text>
+    <text x="464.0" y="828.0" class="monospace" fill="blue">o</text>
+    <text x="464.0" y="863.0" class="monospace" fill="black">r</text>
+    <text x="464.0" y="898.0" class="monospace" fill="black">w</text>
+    <text x="464.0" y="933.0" class="monospace" fill="blue">w</text>
+    <text x="464.0" y="968.0" class="monospace" fill="blue">w</text>
+    <text x="464.0" y="1003.0" class="monospace" fill="blue">w</text>
+  </g>
+  <g id="LCP">
+  <g id="LCPvals">
+    <text x="181.0" y="338.0" class="label" text-anchor="end">LCP</text>
+    <text x="181.0" y="373.0" class="label" text-anchor="end">0</text>
+    <text x="181.0" y="408.0" class="label" text-anchor="end">0</text>
+    <text x="181.0" y="443.0" class="label" text-anchor="end">1</text>
+    <text x="181.0" y="478.0" class="label" text-anchor="end">1</text>
+    <text x="181.0" y="513.0" class="label" text-anchor="end">1</text>
+    <text x="181.0" y="548.0" class="label" text-anchor="end">0</text>
+    <text x="181.0" y="583.0" class="label" text-anchor="end">0</text>
+    <text x="181.0" y="618.0" class="label" text-anchor="end">0</text>
+    <text x="181.0" y="653.0" class="label" text-anchor="end">0</text>
+    <text x="181.0" y="688.0" class="label" text-anchor="end">1</text>
+    <text x="181.0" y="723.0" class="label" text-anchor="end">0</text>
+    <text x="181.0" y="758.0" class="label" text-anchor="end">3</text>
+    <text x="181.0" y="793.0" class="label" text-anchor="end">3</text>
+    <text x="181.0" y="828.0" class="label" text-anchor="end">2</text>
+    <text x="181.0" y="863.0" class="label" text-anchor="end">0</text>
+    <text x="181.0" y="898.0" class="label" text-anchor="end">0</text>
+    <text x="181.0" y="933.0" class="label" text-anchor="end">2</text>
+    <text x="181.0" y="968.0" class="label" text-anchor="end">2</text>
+    <text x="181.0" y="1003.0" class="label" text-anchor="end">1</text>
+  </g>
+  </g>
+  <g id="LCPrects">
+  <g id="LCPrect1">
+    <rect x="455.0" y="420" width="30" height="35" class="blue-highlight"/>
+    <rect x="455.0" y="455" width="30" height="35" class="blue-highlight"/>
+    <rect x="455.0" y="490" width="30" height="35" class="blue-highlight"/>
+    <rect x="455.0" y="665" width="30" height="35" class="blue-highlight"/>
+    <rect x="455.0" y="735" width="64" height="35" class="blue-highlight"/>
+    <rect x="455.0" y="770" width="64" height="35" class="blue-highlight"/>
+    <rect x="455.0" y="805" width="47" height="35" class="blue-highlight"/>
+    <rect x="455.0" y="910" width="47" height="35" class="blue-highlight"/>
+    <rect x="455.0" y="945" width="47" height="35" class="blue-highlight"/>
+    <rect x="455.0" y="980" width="30" height="35" class="blue-highlight"/>
+  </g>
+  <g id="LCPrect2">
+    <rect x="455.0" y="385" width="30" height="35" class="blue-outline"/>
+    <rect x="455.0" y="420" width="30" height="35" class="blue-outline"/>
+    <rect x="455.0" y="455" width="30" height="35" class="blue-outline"/>
+    <rect x="455.0" y="630" width="30" height="35" class="blue-outline"/>
+    <rect x="455.0" y="700" width="64" height="35" class="blue-outline"/>
+    <rect x="455.0" y="735" width="64" height="35" class="blue-outline"/>
+    <rect x="455.0" y="770" width="47" height="35" class="blue-outline"/>
+    <rect x="455.0" y="875" width="47" height="35" class="blue-outline"/>
+    <rect x="455.0" y="910" width="47" height="35" class="blue-outline"/>
+    <rect x="455.0" y="945" width="30" height="35" class="blue-outline"/>
+  </g>
+  </g>
+  <g id="FL">
+  <g id="FLrects">
+    <rect x="122.5" y="422.25" width="26" height="66" class="teal-highlight"/>
+    <rect x="122.5" y="702.25" width="26" height="136" class="teal-highlight"/>
+    <rect x="122.5" y="877.25" width="26" height="66" class="teal-highlight"/>
+  </g>
+  <g id="FLvals">
+    <text x="146.0" y="338.0" class="label" text-anchor="end">FL</text>
+    <text x="146.0" y="373.0" class="label" text-anchor="end">7</text>
+    <text x="146.0" y="408.0" class="label" text-anchor="end">0</text>
+    <text x="146.0" y="443.0" class="label" text-anchor="end">5</text>
+    <text x="146.0" y="478.0" class="label" text-anchor="end">6</text>
+    <text x="146.0" y="513.0" class="label" text-anchor="end">9</text>
+    <text x="146.0" y="548.0" class="label" text-anchor="end">14</text>
+    <text x="146.0" y="583.0" class="label" text-anchor="end">10</text>
+    <text x="146.0" y="618.0" class="label" text-anchor="end">12</text>
+    <text x="146.0" y="653.0" class="label" text-anchor="end">3</text>
+    <text x="146.0" y="688.0" class="label" text-anchor="end">11</text>
+    <text x="146.0" y="723.0" class="label" text-anchor="end">15</text>
+    <text x="146.0" y="758.0" class="label" text-anchor="end">16</text>
+    <text x="146.0" y="793.0" class="label" text-anchor="end">17</text>
+    <text x="146.0" y="828.0" class="label" text-anchor="end">18</text>
+    <text x="146.0" y="863.0" class="label" text-anchor="end">13</text>
+    <text x="146.0" y="898.0" class="label" text-anchor="end">1</text>
+    <text x="146.0" y="933.0" class="label" text-anchor="end">2</text>
+    <text x="146.0" y="968.0" class="label" text-anchor="end">4</text>
+    <text x="146.0" y="1003.0" class="label" text-anchor="end">8</text>
+  </g>
+  </g>
+  <g id="Rank">
+    <text x="106.0" y="338.0" class="label" text-anchor="end">Rank</text>
+    <text x="106.0" y="373.0" class="label" text-anchor="end">0</text>
+    <text x="106.0" y="408.0" class="label" text-anchor="end">1</text>
+    <text x="106.0" y="443.0" class="label" text-anchor="end">2</text>
+    <text x="106.0" y="478.0" class="label" text-anchor="end">3</text>
+    <text x="106.0" y="513.0" class="label" text-anchor="end">4</text>
+    <text x="106.0" y="548.0" class="label" text-anchor="end">5</text>
+    <text x="106.0" y="583.0" class="label" text-anchor="end">6</text>
+    <text x="106.0" y="618.0" class="label" text-anchor="end">7</text>
+    <text x="106.0" y="653.0" class="label" text-anchor="end">8</text>
+    <text x="106.0" y="688.0" class="label" text-anchor="end">9</text>
+    <text x="106.0" y="723.0" class="label" text-anchor="end">10</text>
+    <text x="106.0" y="758.0" class="label" text-anchor="end">11</text>
+    <text x="106.0" y="793.0" class="label" text-anchor="end">12</text>
+    <text x="106.0" y="828.0" class="label" text-anchor="end">13</text>
+    <text x="106.0" y="863.0" class="label" text-anchor="end">14</text>
+    <text x="106.0" y="898.0" class="label" text-anchor="end">15</text>
+    <text x="106.0" y="933.0" class="label" text-anchor="end">16</text>
+    <text x="106.0" y="968.0" class="label" text-anchor="end">17</text>
+    <text x="106.0" y="1003.0" class="label" text-anchor="end">18</text>
+  </g>
+  <g id="Thresholds">
+    <text x="225.0" y="336.25" class="label" text-anchor="end">$</text>
+    <rect x="206.0" y="389.0" width="26" height="136" class="medgray-highlight"/>
+    <rect x="206.0" y="599.0" width="26" height="66" class="medgray-highlight"/>
+    <rect x="206.0" y="704.0" width="26" height="311" class="lightgray-highlight"/>
+    <text x="225.0" y="369.5" class="label" text-anchor="end"> </text>
+    <text x="225.0" y="404.5" class="label" text-anchor="end">=</text>
+    <text x="225.0" y="439.5" class="label" text-anchor="end">=</text>
+    <text x="225.0" y="474.5" class="label" text-anchor="end">=</text>
+    <text x="225.0" y="509.5" class="label" text-anchor="end">=</text>
+    <text x="225.0" y="544.5" class="label" text-anchor="end"> </text>
+    <text x="225.0" y="579.5" class="label" text-anchor="end"> </text>
+    <text x="225.0" y="614.5" class="label" text-anchor="end">=</text>
+    <text x="225.0" y="649.5" class="label" text-anchor="end">=</text>
+    <text x="225.0" y="684.5" class="label" text-anchor="end"> </text>
+    <text x="225.0" y="719.5" class="label" text-anchor="end">↑</text>
+    <text x="225.0" y="754.5" class="label" text-anchor="end">↑</text>
+    <text x="225.0" y="789.5" class="label" text-anchor="end">↑</text>
+    <text x="225.0" y="824.5" class="label" text-anchor="end">↑</text>
+    <text x="225.0" y="859.5" class="label" text-anchor="end">↑</text>
+    <text x="225.0" y="894.5" class="label" text-anchor="end">↑</text>
+    <text x="225.0" y="929.5" class="label" text-anchor="end">↑</text>
+    <text x="225.0" y="964.5" class="label" text-anchor="end">↑</text>
+    <text x="225.0" y="999.5" class="label" text-anchor="end">↑</text>
+    <text x="255.0" y="336.25" class="label" text-anchor="end">b</text>
+    <rect x="236.0" y="354.0" width="26" height="486" class="lightgray-highlight"/>
+    <rect x="236.0" y="879.0" width="26" height="136" class="lightgray-highlight"/>
+    <text x="255.0" y="369.5" class="label" text-anchor="end">↓</text>
+    <text x="255.0" y="404.5" class="label" text-anchor="end">↓</text>
+    <text x="255.0" y="439.5" class="label" text-anchor="end">↓</text>
+    <text x="255.0" y="474.5" class="label" text-anchor="end">↓</text>
+    <text x="255.0" y="509.5" class="label" text-anchor="end">↓</text>
+    <text x="255.0" y="544.5" class="label" text-anchor="end">↓</text>
+    <text x="255.0" y="579.5" class="label" text-anchor="end">↓</text>
+    <text x="255.0" y="614.5" class="label" text-anchor="end">↓</text>
+    <text x="255.0" y="649.5" class="label" text-anchor="end">↓</text>
+    <text x="255.0" y="684.5" class="label" text-anchor="end">↓</text>
+    <text x="255.0" y="719.5" class="label" text-anchor="end">↓</text>
+    <text x="255.0" y="754.5" class="label" text-anchor="end">↓</text>
+    <text x="255.0" y="789.5" class="label" text-anchor="end">↓</text>
+    <text x="255.0" y="824.5" class="label" text-anchor="end">↓</text>
+    <text x="255.0" y="859.5" class="label" text-anchor="end"> </text>
+    <text x="255.0" y="894.5" class="label" text-anchor="end">↑</text>
+    <text x="255.0" y="929.5" class="label" text-anchor="end">↑</text>
+    <text x="255.0" y="964.5" class="label" text-anchor="end">↑</text>
+    <text x="255.0" y="999.5" class="label" text-anchor="end">↑</text>
+    <text x="285.0" y="336.25" class="label" text-anchor="end">c</text>
+    <rect x="266.0" y="354.0" width="26" height="346" class="lightgray-highlight"/>
+    <rect x="266.0" y="739.0" width="26" height="276" class="lightgray-highlight"/>
+    <text x="285.0" y="369.5" class="label" text-anchor="end">↓</text>
+    <text x="285.0" y="404.5" class="label" text-anchor="end">↓</text>
+    <text x="285.0" y="439.5" class="label" text-anchor="end">↓</text>
+    <text x="285.0" y="474.5" class="label" text-anchor="end">↓</text>
+    <text x="285.0" y="509.5" class="label" text-anchor="end">↓</text>
+    <text x="285.0" y="544.5" class="label" text-anchor="end">↓</text>
+    <text x="285.0" y="579.5" class="label" text-anchor="end">↓</text>
+    <text x="285.0" y="614.5" class="label" text-anchor="end">↓</text>
+    <text x="285.0" y="649.5" class="label" text-anchor="end">↓</text>
+    <text x="285.0" y="684.5" class="label" text-anchor="end">↓</text>
+    <text x="285.0" y="719.5" class="label" text-anchor="end"> </text>
+    <text x="285.0" y="754.5" class="label" text-anchor="end">↑</text>
+    <text x="285.0" y="789.5" class="label" text-anchor="end">↑</text>
+    <text x="285.0" y="824.5" class="label" text-anchor="end">↑</text>
+    <text x="285.0" y="859.5" class="label" text-anchor="end">↑</text>
+    <text x="285.0" y="894.5" class="label" text-anchor="end">↑</text>
+    <text x="285.0" y="929.5" class="label" text-anchor="end">↑</text>
+    <text x="285.0" y="964.5" class="label" text-anchor="end">↑</text>
+    <text x="285.0" y="999.5" class="label" text-anchor="end">↑</text>
+    <text x="315.0" y="336.25" class="label" text-anchor="end">h</text>
+    <rect x="296.0" y="354.0" width="26" height="416" class="lightgray-highlight"/>
+    <rect x="296.0" y="809.0" width="26" height="206" class="lightgray-highlight"/>
+    <text x="315.0" y="369.5" class="label" text-anchor="end">↓</text>
+    <text x="315.0" y="404.5" class="label" text-anchor="end">↓</text>
+    <text x="315.0" y="439.5" class="label" text-anchor="end">↓</text>
+    <text x="315.0" y="474.5" class="label" text-anchor="end">↓</text>
+    <text x="315.0" y="509.5" class="label" text-anchor="end">↓</text>
+    <text x="315.0" y="544.5" class="label" text-anchor="end">↓</text>
+    <text x="315.0" y="579.5" class="label" text-anchor="end">↓</text>
+    <text x="315.0" y="614.5" class="label" text-anchor="end">↓</text>
+    <text x="315.0" y="649.5" class="label" text-anchor="end">↓</text>
+    <text x="315.0" y="684.5" class="label" text-anchor="end">↓</text>
+    <text x="315.0" y="719.5" class="label" text-anchor="end">↓</text>
+    <text x="315.0" y="754.5" class="label" text-anchor="end">↓</text>
+    <text x="315.0" y="789.5" class="label" text-anchor="end"> </text>
+    <text x="315.0" y="824.5" class="label" text-anchor="end">↑</text>
+    <text x="315.0" y="859.5" class="label" text-anchor="end">↑</text>
+    <text x="315.0" y="894.5" class="label" text-anchor="end">↑</text>
+    <text x="315.0" y="929.5" class="label" text-anchor="end">↑</text>
+    <text x="315.0" y="964.5" class="label" text-anchor="end">↑</text>
+    <text x="315.0" y="999.5" class="label" text-anchor="end">↑</text>
+    <text x="345.0" y="336.25" class="label" text-anchor="end">n</text>
+    <rect x="326.0" y="354.0" width="26" height="101" class="lightgray-highlight"/>
+    <rect x="326.0" y="494.0" width="26" height="31" class="lightgray-highlight"/>
+    <rect x="326.0" y="529.0" width="26" height="206" class="medgray-highlight"/>
+    <rect x="326.0" y="774.0" width="26" height="241" class="lightgray-highlight"/>
+    <text x="345.0" y="369.5" class="label" text-anchor="end">↓</text>
+    <text x="345.0" y="404.5" class="label" text-anchor="end">↓</text>
+    <text x="345.0" y="439.5" class="label" text-anchor="end">↓</text>
+    <text x="345.0" y="474.5" class="label" text-anchor="end"> </text>
+    <text x="345.0" y="509.5" class="label" text-anchor="end">↑</text>
+    <text x="345.0" y="544.5" class="label" text-anchor="end">=</text>
+    <text x="345.0" y="579.5" class="label" text-anchor="end">=</text>
+    <text x="345.0" y="614.5" class="label" text-anchor="end">=</text>
+    <text x="345.0" y="649.5" class="label" text-anchor="end">=</text>
+    <text x="345.0" y="684.5" class="label" text-anchor="end">=</text>
+    <text x="345.0" y="719.5" class="label" text-anchor="end">=</text>
+    <text x="345.0" y="754.5" class="label" text-anchor="end"> </text>
+    <text x="345.0" y="789.5" class="label" text-anchor="end">↑</text>
+    <text x="345.0" y="824.5" class="label" text-anchor="end">↑</text>
+    <text x="345.0" y="859.5" class="label" text-anchor="end">↑</text>
+    <text x="345.0" y="894.5" class="label" text-anchor="end">↑</text>
+    <text x="345.0" y="929.5" class="label" text-anchor="end">↑</text>
+    <text x="345.0" y="964.5" class="label" text-anchor="end">↑</text>
+    <text x="345.0" y="999.5" class="label" text-anchor="end">↑</text>
+    <text x="375.0" y="336.25" class="label" text-anchor="end">o</text>
+    <rect x="356.0" y="354.0" width="26" height="521" class="lightgray-highlight"/>
+    <text x="375.0" y="369.5" class="label" text-anchor="end">↓</text>
+    <text x="375.0" y="404.5" class="label" text-anchor="end">↓</text>
+    <text x="375.0" y="439.5" class="label" text-anchor="end">↓</text>
+    <text x="375.0" y="474.5" class="label" text-anchor="end">↓</text>
+    <text x="375.0" y="509.5" class="label" text-anchor="end">↓</text>
+    <text x="375.0" y="544.5" class="label" text-anchor="end">↓</text>
+    <text x="375.0" y="579.5" class="label" text-anchor="end">↓</text>
+    <text x="375.0" y="614.5" class="label" text-anchor="end">↓</text>
+    <text x="375.0" y="649.5" class="label" text-anchor="end">↓</text>
+    <text x="375.0" y="684.5" class="label" text-anchor="end">↓</text>
+    <text x="375.0" y="719.5" class="label" text-anchor="end">↓</text>
+    <text x="375.0" y="754.5" class="label" text-anchor="end">↓</text>
+    <text x="375.0" y="789.5" class="label" text-anchor="end">↓</text>
+    <text x="375.0" y="824.5" class="label" text-anchor="end">↓</text>
+    <text x="375.0" y="859.5" class="label" text-anchor="end">↓</text>
+    <text x="375.0" y="894.5" class="label" text-anchor="end"> </text>
+    <text x="375.0" y="929.5" class="label" text-anchor="end"> </text>
+    <text x="375.0" y="964.5" class="label" text-anchor="end"> </text>
+    <text x="375.0" y="999.5" class="label" text-anchor="end"> </text>
+    <text x="405.0" y="336.25" class="label" text-anchor="end">r</text>
+    <rect x="386.0" y="354.0" width="26" height="451" class="lightgray-highlight"/>
+    <rect x="386.0" y="844.0" width="26" height="171" class="lightgray-highlight"/>
+    <text x="405.0" y="369.5" class="label" text-anchor="end">↓</text>
+    <text x="405.0" y="404.5" class="label" text-anchor="end">↓</text>
+    <text x="405.0" y="439.5" class="label" text-anchor="end">↓</text>
+    <text x="405.0" y="474.5" class="label" text-anchor="end">↓</text>
+    <text x="405.0" y="509.5" class="label" text-anchor="end">↓</text>
+    <text x="405.0" y="544.5" class="label" text-anchor="end">↓</text>
+    <text x="405.0" y="579.5" class="label" text-anchor="end">↓</text>
+    <text x="405.0" y="614.5" class="label" text-anchor="end">↓</text>
+    <text x="405.0" y="649.5" class="label" text-anchor="end">↓</text>
+    <text x="405.0" y="684.5" class="label" text-anchor="end">↓</text>
+    <text x="405.0" y="719.5" class="label" text-anchor="end">↓</text>
+    <text x="405.0" y="754.5" class="label" text-anchor="end">↓</text>
+    <text x="405.0" y="789.5" class="label" text-anchor="end">↓</text>
+    <text x="405.0" y="824.5" class="label" text-anchor="end"> </text>
+    <text x="405.0" y="859.5" class="label" text-anchor="end">↑</text>
+    <text x="405.0" y="894.5" class="label" text-anchor="end">↑</text>
+    <text x="405.0" y="929.5" class="label" text-anchor="end">↑</text>
+    <text x="405.0" y="964.5" class="label" text-anchor="end">↑</text>
+    <text x="405.0" y="999.5" class="label" text-anchor="end">↑</text>
+    <text x="435.0" y="336.25" class="label" text-anchor="end">w</text>
+    <rect x="416.0" y="354.0" width="26" height="31" class="lightgray-highlight"/>
+    <rect x="416.0" y="459.0" width="26" height="31" class="medgray-highlight"/>
+    <rect x="416.0" y="529.0" width="26" height="101" class="medgray-highlight"/>
+    <rect x="416.0" y="669.0" width="26" height="346" class="lightgray-highlight"/>
+    <text x="435.0" y="369.5" class="label" text-anchor="end">↓</text>
+    <text x="435.0" y="404.5" class="label" text-anchor="end"> </text>
+    <text x="435.0" y="439.5" class="label" text-anchor="end"> </text>
+    <text x="435.0" y="474.5" class="label" text-anchor="end">=</text>
+    <text x="435.0" y="509.5" class="label" text-anchor="end"> </text>
+    <text x="435.0" y="544.5" class="label" text-anchor="end">=</text>
+    <text x="435.0" y="579.5" class="label" text-anchor="end">=</text>
+    <text x="435.0" y="614.5" class="label" text-anchor="end">=</text>
+    <text x="435.0" y="649.5" class="label" text-anchor="end"> </text>
+    <text x="435.0" y="684.5" class="label" text-anchor="end">↑</text>
+    <text x="435.0" y="719.5" class="label" text-anchor="end">↑</text>
+    <text x="435.0" y="754.5" class="label" text-anchor="end">↑</text>
+    <text x="435.0" y="789.5" class="label" text-anchor="end">↑</text>
+    <text x="435.0" y="824.5" class="label" text-anchor="end">↑</text>
+    <text x="435.0" y="859.5" class="label" text-anchor="end">↑</text>
+    <text x="435.0" y="894.5" class="label" text-anchor="end">↑</text>
+    <text x="435.0" y="929.5" class="label" text-anchor="end">↑</text>
+    <text x="435.0" y="964.5" class="label" text-anchor="end">↑</text>
+    <text x="435.0" y="999.5" class="label" text-anchor="end">↑</text>
+  </g>
+  <g id="RunLines">
+  <line x1="52.0" y1="385.25" x2="904.0" y2="385.25" class="bwt-separator"/>
+  <line x1="52.0" y1="455.25" x2="904.0" y2="455.25" class="bwt-separator"/>
+  <line x1="52.0" y1="490.25" x2="904.0" y2="490.25" class="bwt-separator"/>
+  <line x1="52.0" y1="525.25" x2="904.0" y2="525.25" class="bwt-separator"/>
+  <line x1="52.0" y1="595.25" x2="904.0" y2="595.25" class="bwt-separator"/>
+  <line x1="52.0" y1="630.25" x2="904.0" y2="630.25" class="bwt-separator"/>
+  <line x1="52.0" y1="665.25" x2="904.0" y2="665.25" class="bwt-separator"/>
+  <line x1="52.0" y1="700.25" x2="904.0" y2="700.25" class="bwt-separator"/>
+  <line x1="52.0" y1="735.25" x2="904.0" y2="735.25" class="bwt-separator"/>
+  <line x1="52.0" y1="770.25" x2="904.0" y2="770.25" class="bwt-separator"/>
+  <line x1="52.0" y1="805.25" x2="904.0" y2="805.25" class="bwt-separator"/>
+  <line x1="52.0" y1="840.25" x2="904.0" y2="840.25" class="bwt-separator"/>
+  <line x1="52.0" y1="875.25" x2="904.0" y2="875.25" class="bwt-separator"/>
+  </g>
+  <g id="MUMs">
+  </g>
+</svg>

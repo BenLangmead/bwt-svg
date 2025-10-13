@@ -21,7 +21,10 @@
                 .arrow-label { font-family: 'Courier New', monospace; font-size: 14px; font-weight: bold; }
                 </style>
             </defs>
-              <g id="T">
+              <line x1="0" y1="280" x2="790" y2="280" style="stroke:#bbb;stroke-width:3;stroke-dasharray:4,4"/>
+  <line x1="790" y1="0" x2="790" y2="1050" style="stroke:#bbb;stroke-width:3;stroke-dasharray:4,4"/>
+  <line x1="644.0" y1="0" x2="644.0" y2="1050" style="stroke:#38f;stroke-width:3;stroke-dasharray:4,4"/>
+  <g id="T">
     <text x="90" y="35" class="label" text-anchor="end">T</text>
     <text x="126.0" y="35" class="monospace" >h</text>
     <text x="156.0" y="35" class="monospace" >o</text>
