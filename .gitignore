@@ -78,7 +78,7 @@ ehthumbs.db
 Thumbs.db
 
 # Generated files (but keep examples/)
-bwt_diagram.svg
+*.svg
 *.log
 
 # Keep examples/ directory and its contents
