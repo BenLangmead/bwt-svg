@@ -417,7 +417,7 @@ def render(t, show_mums=False,
 
     bwm_start_y = 10 * ch_ht + padding - 30
     from_right = 0
-    right_hand_reference = overall_width - space
+    right_hand_reference = overall_width - padding/2
 
     #
     # DA (if MUMs are shown)
@@ -534,31 +534,39 @@ def render(t, show_mums=False,
         lcs_group = []
         with svg_group(lcs_group, id="LCSrects"):
             y_addend = 5
+            x_addend = -2
+            right_extreme = (len(mybwm[0]) - 2) * bwm_narrow_col_wd + ch_wd * 2.3
+            
             lcs_rect1_group = []
             with svg_group(lcs_rect1_group, id="LCSrect1"):
-                for i, row in enumerate(mybwm):
+                for i in range(len(mybwm)):
                     y = bwm_start_y + (i-1) * ch_ht + y_addend
                     lcs_val = lcs[i] if i < len(lcs) else 0
                     if lcs_val > 0:
-                        lcs_width = ch_wd + lcs_val * bwm_narrow_col_wd
-                        lcs_offset = (len(row) - lcs_val + 1) * bwm_narrow_col_wd
-                        this_lcs_start_x = bwm_start_x + lcs_offset
+                        wide_part = min(lcs_val, 1) * ch_wd
+                        narrow_part = max(lcs_val-1, 0) * bwm_narrow_col_wd
+                        bump = 0 if lcs_val < 2 else 8
+                        total = wide_part + narrow_part + bump
+                        lcs_offset = right_extreme - total
+                        this_lcs_start_x = bwm_start_x + lcs_offset + x_addend
                         lcs_rect1_group.append(
-                            _rect(this_lcs_start_x, y, lcs_width, ch_ht, 'red-highlight'))
+                            _rect(this_lcs_start_x, y, total, ch_ht, 'red-highlight'))
             lcs_group.extend(lcs_rect1_group)
 
             lcs_rect2_group = []
             with svg_group(lcs_rect2_group, id="LCSrect2"):
-                for i, row in enumerate(mybwm):
+                for i in range(len(mybwm)):
                     y = bwm_start_y + (i-2) * ch_ht + y_addend
                     lcs_val = lcs[i] if i < len(lcs) else 0
-                    if lcs_val > 0:
-                        lcs_width = ch_wd + lcs_val * bwm_narrow_col_wd
-                        lcs_offset = (len(row) - lcs_val + 1) * bwm_narrow_col_wd
-                        if i > 0:
-                            this_lcs_start_x = bwm_start_x + lcs_offset
-                            lcs_rect2_group.append(
-                                _rect(this_lcs_start_x, y, lcs_width, ch_ht, 'red-outline'))
+                    if lcs_val > 0 and i > 0:
+                        wide_part = min(lcs_val, 1) * ch_wd
+                        narrow_part = max(lcs_val-1, 0) * bwm_narrow_col_wd
+                        bump = 0 if lcs_val < 2 else 8
+                        total = wide_part + narrow_part + bump
+                        lcs_offset = right_extreme - total
+                        this_lcs_start_x = bwm_start_x + lcs_offset + x_addend
+                        lcs_rect2_group.append(
+                            _rect(this_lcs_start_x, y, total, ch_ht, 'red-outline'))
             lcs_group.extend(lcs_rect2_group)
         return ''.join(lcs_group)
 
@@ -661,13 +669,16 @@ def render(t, show_mums=False,
             # bottom rotation involved in the LCP
             y_addend = 5
             lcp_rect1_group = []
-            rect_x = bwm_start_x - 0.1 * ch_wd
+            rect_x = bwm_start_x - 0.15 * ch_wd
             with svg_group(lcp_rect1_group, id="LCPrect1"):
                 for i in range(len(mybwm)):
-                    y = bwm_start_y + (i-1) * ch_ht + y_addend
                     lcp_val = lcp[i] if i < len(lcp) else 0
                     if lcp_val > 0:
-                        lcp_width = lcp_val * ch_wd - (lcp_val - 1) * bwm_narrow_col_wd
+                        y = bwm_start_y + (i-1) * ch_ht + y_addend
+                        wide_part = min(lcp_val, 1) * ch_wd
+                        narrow_part = max(lcp_val-1, 0) * bwm_narrow_col_wd
+                        bump = 0 if lcp_val < 2 else 5
+                        lcp_width = wide_part + narrow_part + bump
                         lcp_rect1_group.append(_rect(rect_x, y, lcp_width, ch_ht, 'blue-highlight'))
             lcp_group.extend(lcp_rect1_group)
 
@@ -676,13 +687,15 @@ def render(t, show_mums=False,
             lcp_rect2_group = []
             with svg_group(lcp_rect2_group, id="LCPrect2"):
                 for i in range(len(mybwm)):
-                    y = bwm_start_y + (i-2) * ch_ht + y_addend
                     lcp_val = lcp[i] if i < len(lcp) else 0
-                    if lcp_val > 0:
-                        lcp_width = lcp_val * ch_wd - (lcp_val - 1) * bwm_narrow_col_wd
-                        if i > 0:
-                            lcp_rect2_group.append(
-                                _rect(rect_x, y, lcp_width, ch_ht, 'blue-outline'))
+                    if lcp_val > 0 and i > 0:
+                        y = bwm_start_y + (i-2) * ch_ht + y_addend
+                        wide_part = min(lcp_val, 1) * ch_wd
+                        narrow_part = max(lcp_val-1, 0) * bwm_narrow_col_wd
+                        bump = 0 if lcp_val < 2 else 5
+                        lcp_width = wide_part + narrow_part + bump
+                        lcp_rect2_group.append(
+                            _rect(rect_x, y, lcp_width, ch_ht, 'blue-outline'))
             lcp_group.extend(lcp_rect2_group)
         return ''.join(lcp_group)
 

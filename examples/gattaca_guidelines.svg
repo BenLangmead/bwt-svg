@@ -120,126 +120,126 @@
   </g>
   </g>
   <g id="SA">
-    <text x="471.0" y="338.0" class="label" text-anchor="end">SA</text>
-    <text x="471.0" y="373.0" class="label" text-anchor="end">7</text>
-    <text x="471.0" y="408.0" class="label" text-anchor="end">6</text>
-    <text x="471.0" y="443.0" class="label" text-anchor="end">4</text>
-    <text x="471.0" y="478.0" class="label" text-anchor="end">1</text>
-    <text x="471.0" y="513.0" class="label" text-anchor="end">5</text>
-    <text x="471.0" y="548.0" class="label" text-anchor="end">0</text>
-    <text x="471.0" y="583.0" class="label" text-anchor="end">3</text>
-    <text x="471.0" y="618.0" class="label" text-anchor="end">2</text>
+    <text x="441.0" y="338.0" class="label" text-anchor="end">SA</text>
+    <text x="441.0" y="373.0" class="label" text-anchor="end">7</text>
+    <text x="441.0" y="408.0" class="label" text-anchor="end">6</text>
+    <text x="441.0" y="443.0" class="label" text-anchor="end">4</text>
+    <text x="441.0" y="478.0" class="label" text-anchor="end">1</text>
+    <text x="441.0" y="513.0" class="label" text-anchor="end">5</text>
+    <text x="441.0" y="548.0" class="label" text-anchor="end">0</text>
+    <text x="441.0" y="583.0" class="label" text-anchor="end">3</text>
+    <text x="441.0" y="618.0" class="label" text-anchor="end">2</text>
   </g>
   <g id="LF">
   <g id="LFrects">
   </g>
   <g id="LF">
-    <text x="426.0" y="338.0" class="label" text-anchor="end">LF</text>
-    <text x="426.0" y="373.0" class="label" text-anchor="end">1</text>
-    <text x="426.0" y="408.0" class="label" text-anchor="end">4</text>
-    <text x="426.0" y="443.0" class="label" text-anchor="end">6</text>
-    <text x="426.0" y="478.0" class="label" text-anchor="end">5</text>
-    <text x="426.0" y="513.0" class="label" text-anchor="end">2</text>
-    <text x="426.0" y="548.0" class="label" text-anchor="end">0</text>
-    <text x="426.0" y="583.0" class="label" text-anchor="end">7</text>
-    <text x="426.0" y="618.0" class="label" text-anchor="end">3</text>
+    <text x="396.0" y="338.0" class="label" text-anchor="end">LF</text>
+    <text x="396.0" y="373.0" class="label" text-anchor="end">1</text>
+    <text x="396.0" y="408.0" class="label" text-anchor="end">4</text>
+    <text x="396.0" y="443.0" class="label" text-anchor="end">6</text>
+    <text x="396.0" y="478.0" class="label" text-anchor="end">5</text>
+    <text x="396.0" y="513.0" class="label" text-anchor="end">2</text>
+    <text x="396.0" y="548.0" class="label" text-anchor="end">0</text>
+    <text x="396.0" y="583.0" class="label" text-anchor="end">7</text>
+    <text x="396.0" y="618.0" class="label" text-anchor="end">3</text>
   </g>
   </g>
   <g id="LCS">
   <g id="LCSvals">
-    <text x="381.0" y="338.0" class="label" text-anchor="end">LCS</text>
-    <text x="381.0" y="373.0" class="label" text-anchor="end">0</text>
-    <text x="381.0" y="408.0" class="label" text-anchor="end">0</text>
-    <text x="381.0" y="443.0" class="label" text-anchor="end">0</text>
-    <text x="381.0" y="478.0" class="label" text-anchor="end">0</text>
-    <text x="381.0" y="513.0" class="label" text-anchor="end">0</text>
-    <text x="381.0" y="548.0" class="label" text-anchor="end">0</text>
-    <text x="381.0" y="583.0" class="label" text-anchor="end">0</text>
-    <text x="381.0" y="618.0" class="label" text-anchor="end">0</text>
+    <text x="351.0" y="338.0" class="label" text-anchor="end">LCS</text>
+    <text x="351.0" y="373.0" class="label" text-anchor="end">0</text>
+    <text x="351.0" y="408.0" class="label" text-anchor="end">0</text>
+    <text x="351.0" y="443.0" class="label" text-anchor="end">0</text>
+    <text x="351.0" y="478.0" class="label" text-anchor="end">0</text>
+    <text x="351.0" y="513.0" class="label" text-anchor="end">0</text>
+    <text x="351.0" y="548.0" class="label" text-anchor="end">0</text>
+    <text x="351.0" y="583.0" class="label" text-anchor="end">0</text>
+    <text x="351.0" y="618.0" class="label" text-anchor="end">0</text>
   </g>
   </g>
   <g id="L">
-    <rect x="313.5" y="350.25" width="30" height="280" class="l-column"/>
-    <text x="333.0" y="338.0" class="label" text-anchor="end">L</text>
-    <text x="324.0" y="373.0" class="monospace" fill="black">A</text>
-    <text x="324.0" y="408.0" class="monospace" fill="black">C</text>
-    <text x="324.0" y="443.0" class="monospace" fill="black">T</text>
-    <text x="324.0" y="478.0" class="monospace" fill="black">G</text>
-    <text x="324.0" y="513.0" class="monospace" fill="black">A</text>
-    <text x="324.0" y="548.0" class="monospace" fill="black">$</text>
-    <text x="324.0" y="583.0" class="monospace" fill="black">T</text>
-    <text x="324.0" y="618.0" class="monospace" fill="black">A</text>
+    <rect x="283.5" y="350.25" width="30" height="280" class="l-column"/>
+    <text x="303.0" y="338.0" class="label" text-anchor="end">L</text>
+    <text x="294.0" y="373.0" class="monospace" fill="black">A</text>
+    <text x="294.0" y="408.0" class="monospace" fill="black">C</text>
+    <text x="294.0" y="443.0" class="monospace" fill="black">T</text>
+    <text x="294.0" y="478.0" class="monospace" fill="black">G</text>
+    <text x="294.0" y="513.0" class="monospace" fill="black">A</text>
+    <text x="294.0" y="548.0" class="monospace" fill="black">$</text>
+    <text x="294.0" y="583.0" class="monospace" fill="black">T</text>
+    <text x="294.0" y="618.0" class="monospace" fill="black">A</text>
   </g>
   <g id="BWM">
   <g id="BWMCol0">
-    <text x="198.0" y="373.0" class="monospace" fill="black">$</text>
-    <text x="198.0" y="408.0" class="monospace" fill="black">A</text>
-    <text x="198.0" y="443.0" class="monospace" fill="blue">A</text>
-    <text x="198.0" y="478.0" class="monospace" fill="blue">A</text>
-    <text x="198.0" y="513.0" class="monospace" fill="black">C</text>
-    <text x="198.0" y="548.0" class="monospace" fill="black">G</text>
-    <text x="198.0" y="583.0" class="monospace" fill="black">T</text>
-    <text x="198.0" y="618.0" class="monospace" fill="blue">T</text>
+    <text x="168.0" y="373.0" class="monospace" fill="black">$</text>
+    <text x="168.0" y="408.0" class="monospace" fill="black">A</text>
+    <text x="168.0" y="443.0" class="monospace" fill="blue">A</text>
+    <text x="168.0" y="478.0" class="monospace" fill="blue">A</text>
+    <text x="168.0" y="513.0" class="monospace" fill="black">C</text>
+    <text x="168.0" y="548.0" class="monospace" fill="black">G</text>
+    <text x="168.0" y="583.0" class="monospace" fill="black">T</text>
+    <text x="168.0" y="618.0" class="monospace" fill="blue">T</text>
   </g>
   <g id="BWMCol1">
-    <text x="228.0" y="373.0" class="monospace" fill="black">G</text>
-    <text x="228.0" y="408.0" class="monospace" fill="black">$</text>
-    <text x="228.0" y="443.0" class="monospace" fill="black">C</text>
-    <text x="228.0" y="478.0" class="monospace" fill="black">T</text>
-    <text x="228.0" y="513.0" class="monospace" fill="black">A</text>
-    <text x="228.0" y="548.0" class="monospace" fill="black">A</text>
-    <text x="228.0" y="583.0" class="monospace" fill="black">A</text>
-    <text x="228.0" y="618.0" class="monospace" fill="black">T</text>
+    <text x="198.0" y="373.0" class="monospace" fill="black">G</text>
+    <text x="198.0" y="408.0" class="monospace" fill="black">$</text>
+    <text x="198.0" y="443.0" class="monospace" fill="black">C</text>
+    <text x="198.0" y="478.0" class="monospace" fill="black">T</text>
+    <text x="198.0" y="513.0" class="monospace" fill="black">A</text>
+    <text x="198.0" y="548.0" class="monospace" fill="black">A</text>
+    <text x="198.0" y="583.0" class="monospace" fill="black">A</text>
+    <text x="198.0" y="618.0" class="monospace" fill="black">T</text>
   </g>
   <g id="BWMCol2">
-    <text x="241.0" y="373.0" class="monospace" fill="black">A</text>
-    <text x="241.0" y="408.0" class="monospace" fill="black">G</text>
-    <text x="241.0" y="443.0" class="monospace" fill="black">A</text>
-    <text x="241.0" y="478.0" class="monospace" fill="black">T</text>
-    <text x="241.0" y="513.0" class="monospace" fill="black">$</text>
-    <text x="241.0" y="548.0" class="monospace" fill="black">T</text>
-    <text x="241.0" y="583.0" class="monospace" fill="black">C</text>
-    <text x="241.0" y="618.0" class="monospace" fill="black">A</text>
+    <text x="211.0" y="373.0" class="monospace" fill="black">A</text>
+    <text x="211.0" y="408.0" class="monospace" fill="black">G</text>
+    <text x="211.0" y="443.0" class="monospace" fill="black">A</text>
+    <text x="211.0" y="478.0" class="monospace" fill="black">T</text>
+    <text x="211.0" y="513.0" class="monospace" fill="black">$</text>
+    <text x="211.0" y="548.0" class="monospace" fill="black">T</text>
+    <text x="211.0" y="583.0" class="monospace" fill="black">C</text>
+    <text x="211.0" y="618.0" class="monospace" fill="black">A</text>
   </g>
   <g id="BWMCol3">
-    <text x="254.0" y="373.0" class="monospace" fill="black">T</text>
-    <text x="254.0" y="408.0" class="monospace" fill="black">A</text>
-    <text x="254.0" y="443.0" class="monospace" fill="black">$</text>
-    <text x="254.0" y="478.0" class="monospace" fill="black">A</text>
-    <text x="254.0" y="513.0" class="monospace" fill="black">G</text>
-    <text x="254.0" y="548.0" class="monospace" fill="black">T</text>
-    <text x="254.0" y="583.0" class="monospace" fill="black">A</text>
-    <text x="254.0" y="618.0" class="monospace" fill="black">C</text>
+    <text x="224.0" y="373.0" class="monospace" fill="black">T</text>
+    <text x="224.0" y="408.0" class="monospace" fill="black">A</text>
+    <text x="224.0" y="443.0" class="monospace" fill="black">$</text>
+    <text x="224.0" y="478.0" class="monospace" fill="black">A</text>
+    <text x="224.0" y="513.0" class="monospace" fill="black">G</text>
+    <text x="224.0" y="548.0" class="monospace" fill="black">T</text>
+    <text x="224.0" y="583.0" class="monospace" fill="black">A</text>
+    <text x="224.0" y="618.0" class="monospace" fill="black">C</text>
   </g>
   <g id="BWMCol4">
-    <text x="267.0" y="373.0" class="monospace" fill="black">T</text>
-    <text x="267.0" y="408.0" class="monospace" fill="black">T</text>
-    <text x="267.0" y="443.0" class="monospace" fill="black">G</text>
-    <text x="267.0" y="478.0" class="monospace" fill="black">C</text>
-    <text x="267.0" y="513.0" class="monospace" fill="black">A</text>
-    <text x="267.0" y="548.0" class="monospace" fill="black">A</text>
-    <text x="267.0" y="583.0" class="monospace" fill="black">$</text>
-    <text x="267.0" y="618.0" class="monospace" fill="black">A</text>
+    <text x="237.0" y="373.0" class="monospace" fill="black">T</text>
+    <text x="237.0" y="408.0" class="monospace" fill="black">T</text>
+    <text x="237.0" y="443.0" class="monospace" fill="black">G</text>
+    <text x="237.0" y="478.0" class="monospace" fill="black">C</text>
+    <text x="237.0" y="513.0" class="monospace" fill="black">A</text>
+    <text x="237.0" y="548.0" class="monospace" fill="black">A</text>
+    <text x="237.0" y="583.0" class="monospace" fill="black">$</text>
+    <text x="237.0" y="618.0" class="monospace" fill="black">A</text>
   </g>
   <g id="BWMCol5">
-    <text x="280.0" y="373.0" class="monospace" fill="black">A</text>
-    <text x="280.0" y="408.0" class="monospace" fill="black">T</text>
-    <text x="280.0" y="443.0" class="monospace" fill="black">A</text>
-    <text x="280.0" y="478.0" class="monospace" fill="black">A</text>
-    <text x="280.0" y="513.0" class="monospace" fill="black">T</text>
-    <text x="280.0" y="548.0" class="monospace" fill="black">C</text>
-    <text x="280.0" y="583.0" class="monospace" fill="black">G</text>
-    <text x="280.0" y="618.0" class="monospace" fill="black">$</text>
+    <text x="250.0" y="373.0" class="monospace" fill="black">A</text>
+    <text x="250.0" y="408.0" class="monospace" fill="black">T</text>
+    <text x="250.0" y="443.0" class="monospace" fill="black">A</text>
+    <text x="250.0" y="478.0" class="monospace" fill="black">A</text>
+    <text x="250.0" y="513.0" class="monospace" fill="black">T</text>
+    <text x="250.0" y="548.0" class="monospace" fill="black">C</text>
+    <text x="250.0" y="583.0" class="monospace" fill="black">G</text>
+    <text x="250.0" y="618.0" class="monospace" fill="black">$</text>
   </g>
   <g id="BWMCol6">
-    <text x="293.0" y="373.0" class="monospace" fill="black">C</text>
-    <text x="293.0" y="408.0" class="monospace" fill="black">A</text>
-    <text x="293.0" y="443.0" class="monospace" fill="black">T</text>
-    <text x="293.0" y="478.0" class="monospace" fill="black">$</text>
-    <text x="293.0" y="513.0" class="monospace" fill="black">T</text>
-    <text x="293.0" y="548.0" class="monospace" fill="black">A</text>
-    <text x="293.0" y="583.0" class="monospace" fill="black">A</text>
-    <text x="293.0" y="618.0" class="monospace" fill="black">G</text>
+    <text x="263.0" y="373.0" class="monospace" fill="black">C</text>
+    <text x="263.0" y="408.0" class="monospace" fill="black">A</text>
+    <text x="263.0" y="443.0" class="monospace" fill="black">T</text>
+    <text x="263.0" y="478.0" class="monospace" fill="black">$</text>
+    <text x="263.0" y="513.0" class="monospace" fill="black">T</text>
+    <text x="263.0" y="548.0" class="monospace" fill="black">A</text>
+    <text x="263.0" y="583.0" class="monospace" fill="black">A</text>
+    <text x="263.0" y="618.0" class="monospace" fill="black">G</text>
   </g>
   </g>
   <g id="LCSrects">
@@ -249,76 +249,76 @@
   </g>
   </g>
   <g id="F">
-    <rect x="193.5" y="350.25" width="30" height="280" class="f-column"/>
-    <text x="213.0" y="338.0" class="label" text-anchor="end">F</text>
-    <text x="204.0" y="373.0" class="monospace" fill="black">$</text>
-    <text x="204.0" y="408.0" class="monospace" fill="black">A</text>
-    <text x="204.0" y="443.0" class="monospace" fill="blue">A</text>
-    <text x="204.0" y="478.0" class="monospace" fill="blue">A</text>
-    <text x="204.0" y="513.0" class="monospace" fill="black">C</text>
-    <text x="204.0" y="548.0" class="monospace" fill="black">G</text>
-    <text x="204.0" y="583.0" class="monospace" fill="black">T</text>
-    <text x="204.0" y="618.0" class="monospace" fill="blue">T</text>
+    <rect x="163.5" y="350.25" width="30" height="280" class="f-column"/>
+    <text x="183.0" y="338.0" class="label" text-anchor="end">F</text>
+    <text x="174.0" y="373.0" class="monospace" fill="black">$</text>
+    <text x="174.0" y="408.0" class="monospace" fill="black">A</text>
+    <text x="174.0" y="443.0" class="monospace" fill="blue">A</text>
+    <text x="174.0" y="478.0" class="monospace" fill="blue">A</text>
+    <text x="174.0" y="513.0" class="monospace" fill="black">C</text>
+    <text x="174.0" y="548.0" class="monospace" fill="black">G</text>
+    <text x="174.0" y="583.0" class="monospace" fill="black">T</text>
+    <text x="174.0" y="618.0" class="monospace" fill="blue">T</text>
   </g>
   <g id="LCP">
   <g id="LCPvals">
-    <text x="166.0" y="338.0" class="label" text-anchor="end">LCP</text>
-    <text x="166.0" y="373.0" class="label" text-anchor="end">0</text>
-    <text x="166.0" y="408.0" class="label" text-anchor="end">0</text>
-    <text x="166.0" y="443.0" class="label" text-anchor="end">1</text>
-    <text x="166.0" y="478.0" class="label" text-anchor="end">1</text>
-    <text x="166.0" y="513.0" class="label" text-anchor="end">0</text>
-    <text x="166.0" y="548.0" class="label" text-anchor="end">0</text>
-    <text x="166.0" y="583.0" class="label" text-anchor="end">0</text>
-    <text x="166.0" y="618.0" class="label" text-anchor="end">1</text>
+    <text x="136.0" y="338.0" class="label" text-anchor="end">LCP</text>
+    <text x="136.0" y="373.0" class="label" text-anchor="end">0</text>
+    <text x="136.0" y="408.0" class="label" text-anchor="end">0</text>
+    <text x="136.0" y="443.0" class="label" text-anchor="end">1</text>
+    <text x="136.0" y="478.0" class="label" text-anchor="end">1</text>
+    <text x="136.0" y="513.0" class="label" text-anchor="end">0</text>
+    <text x="136.0" y="548.0" class="label" text-anchor="end">0</text>
+    <text x="136.0" y="583.0" class="label" text-anchor="end">0</text>
+    <text x="136.0" y="618.0" class="label" text-anchor="end">1</text>
   </g>
   </g>
   <g id="LCPrects">
   <g id="LCPrect1">
-    <rect x="195.0" y="420" width="30" height="35" class="blue-highlight"/>
-    <rect x="195.0" y="455" width="30" height="35" class="blue-highlight"/>
-    <rect x="195.0" y="595" width="30" height="35" class="blue-highlight"/>
+    <rect x="163.5" y="420" width="30" height="35" class="blue-highlight"/>
+    <rect x="163.5" y="455" width="30" height="35" class="blue-highlight"/>
+    <rect x="163.5" y="595" width="30" height="35" class="blue-highlight"/>
   </g>
   <g id="LCPrect2">
-    <rect x="195.0" y="385" width="30" height="35" class="blue-outline"/>
-    <rect x="195.0" y="420" width="30" height="35" class="blue-outline"/>
-    <rect x="195.0" y="560" width="30" height="35" class="blue-outline"/>
+    <rect x="163.5" y="385" width="30" height="35" class="blue-outline"/>
+    <rect x="163.5" y="420" width="30" height="35" class="blue-outline"/>
+    <rect x="163.5" y="560" width="30" height="35" class="blue-outline"/>
   </g>
   </g>
   <g id="FL">
   <g id="FLrects">
   </g>
   <g id="FLvals">
-    <text x="121.0" y="338.0" class="label" text-anchor="end">FL</text>
-    <text x="121.0" y="373.0" class="label" text-anchor="end">5</text>
-    <text x="121.0" y="408.0" class="label" text-anchor="end">0</text>
-    <text x="121.0" y="443.0" class="label" text-anchor="end">4</text>
-    <text x="121.0" y="478.0" class="label" text-anchor="end">7</text>
-    <text x="121.0" y="513.0" class="label" text-anchor="end">1</text>
-    <text x="121.0" y="548.0" class="label" text-anchor="end">3</text>
-    <text x="121.0" y="583.0" class="label" text-anchor="end">2</text>
-    <text x="121.0" y="618.0" class="label" text-anchor="end">6</text>
+    <text x="91.0" y="338.0" class="label" text-anchor="end">FL</text>
+    <text x="91.0" y="373.0" class="label" text-anchor="end">5</text>
+    <text x="91.0" y="408.0" class="label" text-anchor="end">0</text>
+    <text x="91.0" y="443.0" class="label" text-anchor="end">4</text>
+    <text x="91.0" y="478.0" class="label" text-anchor="end">7</text>
+    <text x="91.0" y="513.0" class="label" text-anchor="end">1</text>
+    <text x="91.0" y="548.0" class="label" text-anchor="end">3</text>
+    <text x="91.0" y="583.0" class="label" text-anchor="end">2</text>
+    <text x="91.0" y="618.0" class="label" text-anchor="end">6</text>
   </g>
   </g>
   <g id="Rank">
-    <text x="71.0" y="338.0" class="label" text-anchor="end">Rank</text>
-    <text x="71.0" y="373.0" class="label" text-anchor="end">0</text>
-    <text x="71.0" y="408.0" class="label" text-anchor="end">1</text>
-    <text x="71.0" y="443.0" class="label" text-anchor="end">2</text>
-    <text x="71.0" y="478.0" class="label" text-anchor="end">3</text>
-    <text x="71.0" y="513.0" class="label" text-anchor="end">4</text>
-    <text x="71.0" y="548.0" class="label" text-anchor="end">5</text>
-    <text x="71.0" y="583.0" class="label" text-anchor="end">6</text>
-    <text x="71.0" y="618.0" class="label" text-anchor="end">7</text>
+    <text x="41.0" y="338.0" class="label" text-anchor="end">Rank</text>
+    <text x="41.0" y="373.0" class="label" text-anchor="end">0</text>
+    <text x="41.0" y="408.0" class="label" text-anchor="end">1</text>
+    <text x="41.0" y="443.0" class="label" text-anchor="end">2</text>
+    <text x="41.0" y="478.0" class="label" text-anchor="end">3</text>
+    <text x="41.0" y="513.0" class="label" text-anchor="end">4</text>
+    <text x="41.0" y="548.0" class="label" text-anchor="end">5</text>
+    <text x="41.0" y="583.0" class="label" text-anchor="end">6</text>
+    <text x="41.0" y="618.0" class="label" text-anchor="end">7</text>
   </g>
   <g id="RunLines">
-  <line x1="17.0" y1="385.25" x2="501.0" y2="385.25" class="bwt-separator"/>
-  <line x1="17.0" y1="420.25" x2="501.0" y2="420.25" class="bwt-separator"/>
-  <line x1="17.0" y1="455.25" x2="501.0" y2="455.25" class="bwt-separator"/>
-  <line x1="17.0" y1="490.25" x2="501.0" y2="490.25" class="bwt-separator"/>
-  <line x1="17.0" y1="525.25" x2="501.0" y2="525.25" class="bwt-separator"/>
-  <line x1="17.0" y1="560.25" x2="501.0" y2="560.25" class="bwt-separator"/>
-  <line x1="17.0" y1="595.25" x2="501.0" y2="595.25" class="bwt-separator"/>
+  <line x1="-13.0" y1="385.25" x2="471.0" y2="385.25" class="bwt-separator"/>
+  <line x1="-13.0" y1="420.25" x2="471.0" y2="420.25" class="bwt-separator"/>
+  <line x1="-13.0" y1="455.25" x2="471.0" y2="455.25" class="bwt-separator"/>
+  <line x1="-13.0" y1="490.25" x2="471.0" y2="490.25" class="bwt-separator"/>
+  <line x1="-13.0" y1="525.25" x2="471.0" y2="525.25" class="bwt-separator"/>
+  <line x1="-13.0" y1="560.25" x2="471.0" y2="560.25" class="bwt-separator"/>
+  <line x1="-13.0" y1="595.25" x2="471.0" y2="595.25" class="bwt-separator"/>
   </g>
   <g id="MUMs">
   </g>
