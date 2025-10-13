@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BWT-SVG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BWT-SVG</h1>
+            <p>Visualize the BWT and the related structures that make up compressed indexes.</p>
+        </header>
+
+        <div class="input-section">
+            <form id="bwt-form">
+                <div class="form-group">
+                    <label for="text-input">Input Text:</label>
+                    <input type="text" id="text-input" placeholder="Enter text (must end with #)" required>
+                    <small>Text must end with #.  Use $ as a separator if your input consists of many strings.</small>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="show-mums"> Show MUMs
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="show-thresholds"> Show Thresholds
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label>Example inputs:</label>
+                    <div class="example-buttons">
+                        <button type="button" class="example-btn" data-text="GATTACA#">GATTACA#</button>
+                        <button type="button" class="example-btn" data-text="how$now$brown$cow$#">how$now$brown$cow$#</button>
+                        <button type="button" class="example-btn" data-text="banana#">banana#</button>
+                    </div>
+                </div>
+                
+                <button type="submit" id="submit-btn">Make SVG</button>
+            </form>
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading Pyodide and generating visualization...</p>
+        </div>
+
+        <div class="error" id="error" style="display: none;">
+            <p id="error-message"></p>
+        </div>
+
+        <div class="output-section" id="output" style="display: none;">
+            <div class="svg-container">
+                <div class="svg-header">
+                    <h3>Text space (text, and arrays parallel to text)</h3>
+                    <button id="download-horizontal" class="download-btn">Download SVG</button>
+                </div>
+                <div id="horizontal-svg" class="svg-display"></div>
+            </div>
+            
+            <div class="svg-container">
+                <div class="svg-header">
+                    <h3>Lex space (BWM, and arrays parallel to BWM)</h3>
+                    <button id="download-vertical" class="download-btn">Download SVG</button>
+                </div>
+                <div id="vertical-svg" class="svg-display"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

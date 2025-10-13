@@ -84,3 +84,7 @@ Thumbs.db
 # Keep examples/ directory and its contents
 !examples/
 !examples/*.svg
+
+# Generated web interface files
+docs/bwt_svg/
+docs/bwt_web.py
