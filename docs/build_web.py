@@ -6,9 +6,15 @@ This script generates the web interface files from the original source files:
 1. Copies bwt_svg/ files to docs/bwt_svg/ with fixed imports for Pyodide
 2. Generates docs/bwt_web.py as a consolidated single file
 
+Helps to keep the original implementations in the original python source files,
+so we don't have duplication.
+
 Usage:
     cd docs
     python build_web.py
+
+Author: Ben Langmead
+Date: 10/13/2025
 """
 
 import os
@@ -81,19 +87,23 @@ def generate_bwt_web(bwt_svg_dir, output_dir):
     with open(bwt_svg_dir / "svgize.py", 'r', encoding='utf-8') as f:
         svgize_content = f.read()
 
-    # Remove imports from svgize.py since we'll include everything
+    # Remove imports from svgize.py but keep necessary ones
     lines = svgize_content.split('\n')
     filtered_lines = []
-    skip_imports = True
-
+    
     for line in lines:
         if line.strip().startswith('import ') or line.strip().startswith('from '):
-            if skip_imports:
-                continue
+            # Keep contextlib import since it's used in the code
+            if 'contextlib' in line or 'contextmanager' in line:
+                filtered_lines.append(line)
+            # Remove other imports (argparse, relative imports, bwt imports)
+            continue
+        elif line.strip().startswith("if __name__ == '__main__':"):
+            # Remove the main execution block since we don't need CLI in web interface
+            continue
         else:
-            skip_imports = False
             filtered_lines.append(line)
-
+    
     svgize_content = '\n'.join(filtered_lines)
 
     # Combine into single file
