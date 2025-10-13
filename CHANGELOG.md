@@ -8,6 +8,16 @@ and this project strives to adhere to
 
 ## [Unreleased]
 
+## [0.1.1] - 2025-10-13
+
+### Added
+- MUM support in print mode with --show-mums flag
+- Guidelines in render mode with --show-guidelines flag; useful for debugging
+- Example generation script + more examples
+
+### Changes
+- Improved layout to make things fit across various input sizes
+
 ## [0.1.0] - 2025-10-07
 
 ### Added
