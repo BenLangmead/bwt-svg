@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project strives to adhere to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3] - 2025-10-14
+
+### Changed
+- Several improvements to the web interface, including legends and zoom/pan
+
 ## [0.1.2] - 2025-10-13
 
 ### Added

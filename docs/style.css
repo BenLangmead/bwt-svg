@@ -23,8 +23,8 @@ header {
     text-align: center;
     margin-bottom: 30px;
     padding: 20px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #4fc3f7 0%, #26a69a 100%);
+    color: black;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -87,8 +87,8 @@ small {
 }
 
 button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #4fc3f7 0%, #26a69a 100%);
+    color: black;
     border: none;
     padding: 12px 24px;
     border-radius: 8px;
@@ -198,14 +198,140 @@ button:disabled {
     border-radius: 8px;
     background: #fafafa;
     min-height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    cursor: grab;
+    user-select: none;
+}
+
+.svg-display:active {
+    cursor: grabbing;
 }
 
 .svg-display svg {
-    max-width: 100%;
+    display: block;
+    width: 100%;
     height: auto;
+    transition: transform 0.1s ease;
+    transform-origin: center center;
+}
+
+/* Zoom and Pan Controls */
+.zoom-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+    z-index: 10;
+}
+
+.zoom-btn {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.2s;
+}
+
+.zoom-btn:hover {
+    background: rgba(240, 240, 240, 0.9);
+}
+
+.zoom-btn:active {
+    background: rgba(220, 220, 220, 0.9);
+}
+
+.zoom-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 10;
+}
+
+/* SVG Controls */
+.svg-controls {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+}
+
+.control-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #495057;
+    cursor: pointer;
+}
+
+.control-checkbox input[type="checkbox"] {
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Legend Styles */
+.legend {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.legend h4 {
+    margin: 0 0 10px 0;
+    color: #495057;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.legend-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.legend-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.legend-color {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+/* Responsive legend */
+@media (max-width: 768px) {
+    .legend-content {
+        gap: 8px;
+    }
+    
+    .legend-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
 }
 
 /* Responsive design */

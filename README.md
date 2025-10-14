@@ -1,6 +1,6 @@
 # BWT-SVG: Burrows-Wheeler Transform Visualization
 
-[![Version](https://img.shields.io/badge/version-0.1.2-blue.svg)](https://github.com/langmead/bwt-svg)
+[![Version](https://img.shields.io/badge/version-0.1.3-blue.svg)](https://github.com/langmead/bwt-svg)
 
 This project provides functionality for building the Burrows-Wheeler Transform (BWT) and various other arrays and functions that are useful both in text space (φ, φ⁻¹, ISA, PLCP, etc) and in lex space (SA, LF, LCP, LCS, etc).
 
