@@ -196,7 +196,7 @@ async function handleSubmit(event) {
         await pyodide.runPythonAsync(`
             try:
                 horizontal_result = render('${textInput}', which='horizontal', 
-                                         show_mums=True, show_thresholds=${showThresholds ? 'True' : 'False'})
+                                         show_mums=False, show_thresholds=${showThresholds ? 'True' : 'False'})
                 print("Horizontal SVG generated successfully, length:", len(horizontal_result))
                 print("First 100 chars:", horizontal_result[:100])
             except Exception as e:
@@ -215,7 +215,7 @@ async function handleSubmit(event) {
         await pyodide.runPythonAsync(`
             try:
                 vertical_result = render('${textInput}', which='vertical', 
-                                       show_mums=True, show_thresholds=${showThresholds ? 'True' : 'False'})
+                                       show_mums=False, show_thresholds=${showThresholds ? 'True' : 'False'})
                 print("Vertical SVG generated successfully, length:", len(vertical_result))
                 print("First 100 chars:", vertical_result[:100])
             except Exception as e:
