@@ -1,6 +1,6 @@
 # BWT-SVG: Burrows-Wheeler Transform Visualization
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/langmead/bwt-svg)
+[![Version](https://img.shields.io/badge/version-0.1.2-blue.svg)](https://github.com/langmead/bwt-svg)
 
 This project provides functionality for building the Burrows-Wheeler Transform (BWT) and various other arrays and functions that are useful both in text space (φ, φ⁻¹, ISA, PLCP, etc) and in lex space (SA, LF, LCP, LCS, etc).
 
@@ -33,6 +33,10 @@ The common prefixes and suffixes that give the LCPs and LCSs are highlighted wit
 Compressible stretches of the numeric arrays (e.g. maximal stretches of length 2 or greater where the value repeatedly increases by 1 or decreases by 1) are also highlighted.  This is an easy way to visualize and study the ways in which the BWT enables compressed indexes like r-index and the move structure.
 
 The code is also capable of outputting thresholds (`--show-thresholds`) and maximal unique matches (MUMs, via `--show-mums`).
+
+## Web Interface
+
+Try the [interactive web interface](https://benlangmead.github.io/bwt-svg/); no installation required!  Hosted by GitHub pages and implemented using [Pyodine](https://pyodide.org).
 
 ## Usage
 
