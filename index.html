@@ -11,6 +11,7 @@
         <header>
             <h1>BWT-SVG</h1>
             <p>Visualize the BWT and the related structures that make up compressed indexes.</p>
+            <p>Powered by the open source <a href="https://github.com/benlangmead/bwt-svg">bwt-svg</a> package by <a href="https://www.langmead-lab.org" target="_blank" rel="noopener">Ben Langmead</a> with community help.</p>
         </header>
 
         <div class="input-section">
@@ -40,11 +41,17 @@
                     <div class="example-buttons">
                         <button type="button" class="example-btn" data-text="GATTACA#">GATTACA#</button>
                         <button type="button" class="example-btn" data-text="how$now$brown$cow$#">how$now$brown$cow$#</button>
-                        <button type="button" class="example-btn" data-text="banana#">banana#</button>
+                        <button type="button" class="example-btn" data-text="row_row_row_your_boat$row_row_row_your_boat$#">row_row_row_your_boat$row_row_row_your_boat$#</button>
                     </div>
                 </div>
                 
                 <button type="submit" id="submit-btn">Make SVG</button>
+                <p style="font-size: 0.95em; margin-top: 1em; color: #555;">
+                    If you see a message saying that Pyodide is still loading, please wait a few seconds and try again.
+                </p>
+                <p style="font-size: 0.95em; margin-top: 1em; color: #555;">
+                    Note that large inputs may appear truncated in the displays on this page due to a known bug, but the SVG download should be complete.
+                </p>
             </form>
         </div>
 
@@ -60,18 +67,92 @@
         <div class="output-section" id="output" style="display: none;">
             <div class="svg-container">
                 <div class="svg-header">
-                    <h3>Text space (text, and arrays parallel to text)</h3>
+                    <h3>Text space (text + arrays parallel to text)</h3>
                     <button id="download-horizontal" class="download-btn">Download SVG</button>
                 </div>
-                <div id="horizontal-svg" class="svg-display"></div>
+                <div class="svg-controls">
+                    <label class="control-checkbox">
+                        <input type="checkbox" id="enable-zoom-horizontal" onchange="toggleZoomPan('horizontal-svg', !this.checked)">
+                        Enable zoom/pan
+                    </label>
+                </div>
+                <div id="horizontal-svg" class="svg-display">
+                    <div class="zoom-controls">
+                        <button class="zoom-btn" onclick="zoomIn('horizontal-svg')">+</button>
+                        <button class="zoom-btn" onclick="zoomOut('horizontal-svg')">−</button>
+                        <button class="zoom-btn" onclick="resetZoom('horizontal-svg')">⌂</button>
+                    </div>
+                    <div class="zoom-info" id="horizontal-zoom-info">Zoom: 100%</div>
+                </div>
+                <div class="legend" id="horizontal-legend" style="display: none;">
+                    <!--<h4>Text Space Legend</h4>-->
+                    <div class="legend-content">
+                        <div class="legend-section">
+                            Structures: T (Text), Off (offset in T), ISA (Inverse Suffix Array), 
+                            ϕ (Phi), ϕ⁻¹ (Phi inverse), PLCP (Permuted Longest Common Prefix),
+                            PLCS (Permuted Longest Common Suffix)
+                        </div>
+                        <!--
+                        <div class="legend-section">
+                            <strong>Colors:</strong> <span class="legend-color" style="background: #ffeb3b;">Yellow</span> = MUMs, 
+                            <span class="legend-color" style="background: #4caf50;">Green</span> = Thresholds
+                        </div>
+                        -->
+                        <div class="legend-section">
+                            Purple rectangular boxes in ϕ, ϕ⁻¹, PLCP and PLCS arrays highlight 
+                            stretches of consecutive +1 increases or -1 decreases, which
+                            can be compressed in practice.
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div class="svg-container">
                 <div class="svg-header">
-                    <h3>Lex space (BWM, and arrays parallel to BWM)</h3>
+                    <h3>Lex space (BWM + arrays parallel to BWM)</h3>
                     <button id="download-vertical" class="download-btn">Download SVG</button>
                 </div>
-                <div id="vertical-svg" class="svg-display"></div>
+                <div class="svg-controls">
+                    <label class="control-checkbox">
+                        <input type="checkbox" id="enable-zoom-vertical" onchange="toggleZoomPan('vertical-svg', !this.checked)">
+                        Enable zoom/pan
+                    </label>
+                </div>
+                <div id="vertical-svg" class="svg-display">
+                    <div class="zoom-controls">
+                        <button class="zoom-btn" onclick="zoomIn('vertical-svg')">+</button>
+                        <button class="zoom-btn" onclick="zoomOut('vertical-svg')">−</button>
+                        <button class="zoom-btn" onclick="resetZoom('vertical-svg')">⌂</button>
+                    </div>
+                    <div class="zoom-info" id="vertical-zoom-info">Zoom: 100%</div>
+                </div>
+                <div class="legend" id="vertical-legend" style="display: none;">
+                    <!--<h4>Lex Space Legend</h4>-->
+                    <div class="legend-content">
+                        <div class="legend-section">
+                            Structures: Rank, Thresholds, FL (First-Last mapping aka &Psi;),
+                            LCP (Longest Common Prefix), F (First column),
+                            BWM (Burrows-Wheeler Matrix), L (Last column, which is
+                            also the Burrows-Wheeler Transform of T), 
+                            LF (Last-First mapping), LCS (Longest Common Suffix), SA (Suffix Array), DA (Document Array)
+                        </div>
+                        <!--
+                        <div class="legend-section">
+                            <strong>Colors:</strong> <span class="legend-color" style="background: #ffeb3b;">Yellow</span> = MUMs, 
+                            <span class="legend-color" style="background: #4caf50;">Green</span> = Thresholds
+                        </div>
+                        <div class="legend-section">
+                            <strong>BWM Highlighting:</strong> <span class="legend-color" style="background: #2196f3; color: white;">Blue</span> = Common prefixes, 
+                            <span class="legend-color" style="background: #f44336; color: white;">Red</span> = Common suffixes
+                        </div>
+                        -->
+                        <div class="legend-section">
+                            Teal rectangular boxes in FL and LF highlight 
+                            stretches with consecutive +1 increases, which can be compressed in practice.
+                            Red and blue rectangular boxes in BWM highlight common prefixes and suffixes.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -94,6 +94,27 @@ function displayResults(horizontalSvg, verticalSvg) {
     // Set up download buttons
     setupDownloadButtons(horizontalSvg, verticalSvg);
     
+    // Show legends
+    document.getElementById('horizontal-legend').style.display = 'block';
+    document.getElementById('vertical-legend').style.display = 'block';
+    
+    // Ensure zoom/pan is disabled by default when SVGs are displayed
+    toggleZoomPan('horizontal-svg', true);
+    toggleZoomPan('vertical-svg', true);
+    
+    // Set initial zoom level to fit the images
+    setTimeout(() => {
+        // Temporarily disable auto-zoom to see natural SVG size
+        // const horizontalScale = calculateFitZoom('horizontal-svg');
+        // const verticalScale = calculateFitZoom('vertical-svg');
+        
+        // zoomState['horizontal-svg'].scale = horizontalScale;
+        // zoomState['vertical-svg'].scale = verticalScale;
+        
+        // updateTransform('horizontal-svg');
+        // updateTransform('vertical-svg');
+    }, 100); // Small delay to ensure SVGs are rendered
+    
     // Show output section
     document.getElementById('output').style.display = 'block';
     document.getElementById('output').classList.add('fade-in');
@@ -273,5 +294,246 @@ async function init() {
     }
 }
 
+// Zoom and Pan functionality
+const zoomState = {
+    'horizontal-svg': { scale: 1, translateX: 0, translateY: 0, isDragging: false, startX: 0, startY: 0, disabled: true },
+    'vertical-svg': { scale: 1, translateX: 0, translateY: 0, isDragging: false, startX: 0, startY: 0, disabled: true }
+};
+
+function updateTransform(containerId) {
+    const container = document.getElementById(containerId);
+    const svg = container.querySelector('svg');
+    if (!svg) return;
+    
+    const state = zoomState[containerId];
+    svg.style.transform = `translate(${state.translateX}px, ${state.translateY}px) scale(${state.scale})`;
+    
+    // Update zoom info
+    const zoomInfo = document.getElementById(`${containerId}-zoom-info`);
+    if (zoomInfo) {
+        zoomInfo.textContent = `Zoom: ${Math.round(state.scale * 100)}%`;
+    }
+}
+
+function calculateFitZoom(containerId) {
+    const container = document.getElementById(containerId);
+    const svg = container.querySelector('svg');
+    if (!svg) return 1;
+    
+    // Get container dimensions
+    const containerRect = container.getBoundingClientRect();
+    const containerWidth = containerRect.width - 40; // Account for padding
+    const containerHeight = containerRect.height - 40;
+    
+    // Get SVG's TRUE dimensions from attributes
+    let svgWidth = parseFloat(svg.getAttribute('width')) || svg.viewBox.baseVal.width;
+    let svgHeight = parseFloat(svg.getAttribute('height')) || svg.viewBox.baseVal.height;
+    
+    // Fallback to bounding box if attributes not available
+    if (!svgWidth || !svgHeight) {
+        const bbox = svg.getBoundingClientRect();
+        svgWidth = bbox.width;
+        svgHeight = bbox.height;
+    }
+    
+    // Calculate scale to fit both width and height
+    const scaleX = containerWidth / svgWidth;
+    const scaleY = containerHeight / svgHeight;
+    const fitScale = Math.min(scaleX, scaleY, 1); // Don't scale up beyond 100%
+    
+    return Math.max(fitScale, 0.1); // Minimum 10% zoom
+}
+
+function zoomIn(containerId) {
+    const state = zoomState[containerId];
+    state.scale = Math.min(state.scale * 1.2, 5); // Max zoom 5x
+    updateTransform(containerId);
+}
+
+function zoomOut(containerId) {
+    const state = zoomState[containerId];
+    const newScale = Math.max(state.scale / 1.2, 0.1); // Min zoom 0.1x
+    
+    // If zooming out significantly, center the image
+    if (newScale < 0.5) {
+        state.translateX = 0;
+        state.translateY = 0;
+    }
+    
+    state.scale = newScale;
+    updateTransform(containerId);
+}
+
+function resetZoom(containerId) {
+    const state = zoomState[containerId];
+    state.scale = calculateFitZoom(containerId);
+    state.translateX = 0;
+    state.translateY = 0;
+    updateTransform(containerId);
+}
+
+function toggleZoomPan(containerId, disabled) {
+    const state = zoomState[containerId];
+    state.disabled = disabled;
+    
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    
+    if (disabled) {
+        container.style.cursor = 'default';
+        container.style.userSelect = 'text';
+        // Reset zoom/pan state when disabling
+        state.scale = 1;
+        state.translateX = 0;
+        state.translateY = 0;
+        state.isDragging = false;
+        updateTransform(containerId);
+    } else {
+        container.style.cursor = 'grab';
+        container.style.userSelect = 'none';
+    }
+}
+
+function setupZoomPan(containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    
+    // Mouse wheel zoom
+    container.addEventListener('wheel', (e) => {
+        const state = zoomState[containerId];
+        if (state.disabled) {
+            e.preventDefault();
+            return;
+        }
+        
+        e.preventDefault();
+        const delta = e.deltaY > 0 ? 0.9 : 1.1;
+        const newScale = Math.max(0.1, Math.min(5, state.scale * delta));
+        
+        // If zooming out significantly, center the image
+        if (newScale < 0.5 && state.scale >= 0.5) {
+            state.translateX = 0;
+            state.translateY = 0;
+        }
+        
+        state.scale = newScale;
+        updateTransform(containerId);
+    });
+    
+    // Mouse drag pan
+    container.addEventListener('mousedown', (e) => {
+        if (e.target.tagName === 'BUTTON') return; // Don't drag when clicking buttons
+        const state = zoomState[containerId];
+        if (state.disabled) return;
+        
+        state.isDragging = true;
+        state.startX = e.clientX - state.translateX;
+        state.startY = e.clientY - state.translateY;
+        container.style.cursor = 'grabbing';
+    });
+    
+    container.addEventListener('mousemove', (e) => {
+        const state = zoomState[containerId];
+        if (state.isDragging) {
+            state.translateX = e.clientX - state.startX;
+            state.translateY = e.clientY - state.startY;
+            updateTransform(containerId);
+        }
+    });
+    
+    container.addEventListener('mouseup', () => {
+        const state = zoomState[containerId];
+        state.isDragging = false;
+        container.style.cursor = 'grab';
+    });
+    
+    container.addEventListener('mouseleave', () => {
+        const state = zoomState[containerId];
+        state.isDragging = false;
+        container.style.cursor = 'grab';
+    });
+    
+    // Touch support for mobile
+    let lastTouchDistance = 0;
+    
+    container.addEventListener('touchstart', (e) => {
+        const state = zoomState[containerId];
+        if (state.disabled) return;
+        
+        if (e.touches.length === 2) {
+            // Two finger pinch
+            const touch1 = e.touches[0];
+            const touch2 = e.touches[1];
+            lastTouchDistance = Math.sqrt(
+                Math.pow(touch2.clientX - touch1.clientX, 2) + 
+                Math.pow(touch2.clientY - touch1.clientY, 2)
+            );
+        } else if (e.touches.length === 1) {
+            // Single finger pan
+            state.isDragging = true;
+            const touch = e.touches[0];
+            state.startX = touch.clientX - state.translateX;
+            state.startY = touch.clientY - state.translateY;
+        }
+    });
+    
+    container.addEventListener('touchmove', (e) => {
+        const state = zoomState[containerId];
+        if (state.disabled) return;
+        
+        e.preventDefault();
+        
+        if (e.touches.length === 2) {
+            // Two finger pinch zoom
+            const touch1 = e.touches[0];
+            const touch2 = e.touches[1];
+            const currentDistance = Math.sqrt(
+                Math.pow(touch2.clientX - touch1.clientX, 2) + 
+                Math.pow(touch2.clientY - touch1.clientY, 2)
+            );
+            
+            if (lastTouchDistance > 0) {
+                const scaleChange = currentDistance / lastTouchDistance;
+                const newScale = Math.max(0.1, Math.min(5, state.scale * scaleChange));
+                
+                // If zooming out significantly, center the image
+                if (newScale < 0.5 && state.scale >= 0.5) {
+                    state.translateX = 0;
+                    state.translateY = 0;
+                }
+                
+                state.scale = newScale;
+                updateTransform(containerId);
+            }
+            lastTouchDistance = currentDistance;
+        } else if (e.touches.length === 1 && state.isDragging) {
+            // Single finger pan
+            const touch = e.touches[0];
+            state.translateX = touch.clientX - state.startX;
+            state.translateY = touch.clientY - state.startY;
+            updateTransform(containerId);
+        }
+    });
+    
+    container.addEventListener('touchend', () => {
+        const state = zoomState[containerId];
+        state.isDragging = false;
+        lastTouchDistance = 0;
+    });
+}
+
+// Initialize zoom and pan for both SVG containers
+function initZoomPan() {
+    setupZoomPan('horizontal-svg');
+    setupZoomPan('vertical-svg');
+    
+    // Set initial disabled state (zoom/pan disabled by default)
+    toggleZoomPan('horizontal-svg', true);
+    toggleZoomPan('vertical-svg', true);
+}
+
 // Start the application when the page loads
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', () => {
+    init();
+    initZoomPan();
+});
