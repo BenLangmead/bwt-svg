@@ -52,22 +52,32 @@ Now you can test with various inputs.
 
 ## GitHub Pages Deployment
 
-To deploy on GitHub Pages:
+The web interface is automatically deployed via GitHub Actions:
 
-1. **Generate files** (if not already done):
-   ```bash
-   cd docs
-   python3 build_web.py
-   ```
+1. **Push changes** to the main branch
+2. **GitHub Actions** automatically:
+   - Builds the web interface files using `build_web.py`
+   - Deploys them to the `gh-pages` branch
+   - Updates GitHub Pages automatically
 
-2. **Push the repository** to GitHub
+3. **Access the interface** at `https://username.github.io/bwt-svg/`
 
-3. **Configure GitHub Pages**:
-   - Go to repository Settings > Pages
-   - Set source to "Deploy from a branch" and select "main" branch
-   - Set folder to "/docs"
+### Manual Deployment
 
-4. **Access the interface** at `https://username.github.io/bwt-svg/`
+If you need to test locally or deploy manually:
+
+```bash
+cd docs
+python3 build_web.py  # Generate files
+python3 -m http.server 8000  # Test locally
+```
+
+### GitHub Pages Configuration
+
+1. Go to repository Settings > Pages
+2. Set source to "Deploy from a branch"
+3. Select "gh-pages" branch
+4. The interface will be available at `https://username.github.io/bwt-svg/`
 
 ## Dependencies
 
